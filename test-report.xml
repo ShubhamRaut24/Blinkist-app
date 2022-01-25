@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="E:\React\blinkist\src\Components\atoms\Blank\index.test.tsx">
+    <testCase name="Blank Component" duration="69"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\ProgressBar\index.test.tsx">
+    <testCase name="ProgressBar" duration="95"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Avatar\index.test.tsx">
+    <testCase name="Unit Test - Avatar" duration="118"/>
+  </file>
   <file path="E:\React\blinkist\src\App.test.tsx">
-    <testCase name="renders learn react link" duration="125">
+    <testCase name="renders learn react link" duration="259">
       <failure message="TestingLibraryElementError: Unable to find an element with the text: /learn react/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible."><![CDATA[TestingLibraryElementError: Unable to find an element with the text: /learn react/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
 
 Ignored nodes: comments, <script />, <style />
@@ -53,9 +62,7 @@ Ignored nodes: comments, <script />, <style />
     at jestAdapter (E:\React\blinkist\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
     at runTestInternal (E:\React\blinkist\node_modules\jest-runner\build\runTest.js:389:16)
     at runTest (E:\React\blinkist\node_modules\jest-runner\build\runTest.js:475:34)
-    at TestRunner.runTests (E:\React\blinkist\node_modules\jest-runner\build\index.js:111:12)
-    at TestScheduler.scheduleTests (E:\React\blinkist\node_modules\@jest\core\build\TestScheduler.js:333:13)
-    at runJest (E:\React\blinkist\node_modules\@jest\core\build\runJest.js:404:19)]]></failure>
+    at Object.worker (E:\React\blinkist\node_modules\jest-runner\build\testWorker.js:133:12)]]></failure>
     </testCase>
   </file>
 </testExecutions>
