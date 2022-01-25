@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import {useState, useEffect} from 'react';
-import {Container, Box, Grid} from '@mui/material';
+
+import {useState} from 'react';
+import {Container, Box} from '@mui/material';
 import Typography from '../../atoms/Typography';
 import Tab from '../../molecules/tabs';
 import Card from '../../organisms/Card';
 import CircularProgress from '@mui/material/CircularProgress';
 import {Theme} from '../../../Themes/theme';
-import theme from '../../../Themes/main';
 import { makeStyles } from '@mui/styles';
 const useStyle = makeStyles({
     cards: {

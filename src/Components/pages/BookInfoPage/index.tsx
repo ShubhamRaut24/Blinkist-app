@@ -6,9 +6,6 @@ import Button from '../../atoms/Button';
 import Image from '../../atoms/Images';
 import Tab from '../../molecules/tabs';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-// import Footer from '../../organisms/Footer';
-// import HeaderComponent from '../../organisms/Header';
-import {AccessAlarm, LibraryAddTwoTone} from '@mui/icons-material';
 import {useState, useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import CircularProgress from '@mui/material/CircularProgress';
@@ -100,7 +97,7 @@ const BookInfoComponent = ({library, setLibrary}:any)=>{
     const checkInLibrary = ()=>{
         for(let curr of library.currentlyReading){
             console.log(curr.id,bookId)
-            if(curr.id == bookId){
+            if(curr.id === bookId){
                 setcurrentlyReadingStatus(true)
                 return;
             }
@@ -115,11 +112,12 @@ const BookInfoComponent = ({library, setLibrary}:any)=>{
         }
         checkInLibrary();
         processor(bookId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     const libraryStatusHandler = async (event:any) => {
         console.log("hello")
         try{
-            let index = library.currentlyReading.findIndex((curr:any) => curr.id == bookId);
+            let index = library.currentlyReading.findIndex((curr:any) => curr.id === bookId);
             let currData = library.currentlyReading[index];
             library.currentlyReading.splice(index, 1);
             library.finishedBook.push({"id" : currData.id});

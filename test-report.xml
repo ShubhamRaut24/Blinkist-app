@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="E:\React\blinkist\src\App.test.tsx">
+    <testCase name="renders learn react link" duration="125">
+      <failure message="TestingLibraryElementError: Unable to find an element with the text: /learn react/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible."><![CDATA[TestingLibraryElementError: Unable to find an element with the text: /learn react/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, <script />, <style />
+<body>
+  <div>
+    <div
+      class="App"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg css-14uxf7f-MuiContainer-root"
+      >
+        <span
+          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1gi5zzc-MuiCircularProgress-root"
+          role="progressbar"
+          style="width: 40px; height: 40px;"
+        >
+          <svg
+            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+            viewBox="22 22 44 44"
+          >
+            <circle
+              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+    at Object.getElementError (E:\React\blinkist\node_modules\@testing-library\dom\dist\config.js:38:19)
+    at E:\React\blinkist\node_modules\@testing-library\dom\dist\query-helpers.js:90:38
+    at E:\React\blinkist\node_modules\@testing-library\dom\dist\query-helpers.js:62:17
+    at getByText (E:\React\blinkist\node_modules\@testing-library\dom\dist\query-helpers.js:111:19)
+    at Object.<anonymous> (E:\React\blinkist\src\App.test.tsx:7:30)
+    at Promise.then.completed (E:\React\blinkist\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (E:\React\blinkist\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (E:\React\blinkist\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (E:\React\blinkist\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (E:\React\blinkist\node_modules\jest-circus\build\run.js:66:9)
+    at run (E:\React\blinkist\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (E:\React\blinkist\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (E:\React\blinkist\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (E:\React\blinkist\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (E:\React\blinkist\node_modules\jest-runner\build\runTest.js:475:34)
+    at TestRunner.runTests (E:\React\blinkist\node_modules\jest-runner\build\index.js:111:12)
+    at TestScheduler.scheduleTests (E:\React\blinkist\node_modules\@jest\core\build\TestScheduler.js:333:13)
+    at runJest (E:\React\blinkist\node_modules\@jest\core\build\runJest.js:404:19)]]></failure>
+    </testCase>
+  </file>
+</testExecutions>

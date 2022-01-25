@@ -1,5 +1,4 @@
 import {Container, Box} from '@mui/material'
-// import Banner from '../../molecules/Banner';
 import Input from '../../atoms/Input';
 import {Search} from '@mui/icons-material';
 import Card from '../../organisms/Card';
@@ -73,11 +72,7 @@ const EntrepreneurComp = ({books, setBooks, data, setData, library, setLibrary, 
     }
     return (
         <Container sx={{marginBottom:'100px'}}>
-            {/* <Banner
-                heading='Explore Books on entrepreneurship'
-                discription='Everything you need to know about thriving on a shoestring budget, making your first million, and hiring right from the start.'
-                img='/assets/banner.png'
-            /> */}
+           
             <Banner1/>
             <Input className={classes.input} startIcon={<Search />} placeholder="Search by title or author" sx={{display:'flex',jusstifyContent:'start'}} />
             <Box>

@@ -1,6 +1,5 @@
 import { LinearProgress } from '@mui/material';
-import { ThemeProvider } from '@mui/material/styles';
-import  mainTheme  from "../../../Themes/main";
+
 
 const barStyled =
 { height: '15px', 

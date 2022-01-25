@@ -1,20 +1,20 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+
 import Logo from '../../molecules/Logo';
 import Icon from '../../atoms/Icons';
 import Typography from '../../atoms/Typography';
-import {Box,  Menu, MenuItem, Container, Tooltip, Stack} from '@mui/material';
-import {ArrowDropUp, ArrowDropDown, Search} from '@mui/icons-material';
+import {Box,  Menu, MenuItem, Container} from '@mui/material';
+import {Search} from '@mui/icons-material';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '../../atoms/Button';
-import Image from '../../atoms/Images';
-import React, {useState} from 'react';
+import {useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import AvatarComp from '../../atoms/Avatar'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import SearchBox from '../../molecules/Search';
-import { fontSize } from '@mui/system';
+
 
 
 

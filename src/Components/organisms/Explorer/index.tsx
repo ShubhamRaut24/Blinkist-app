@@ -67,10 +67,6 @@ const ExploreComponent = ()=>{
             'label': 'See popular titles'
           }
     ]
-    const [currState, setCurrState] = useState(tabData[0].value);
-    const handleState = (state:string) => {
-        setCurrState(state);
-    }
     
     const data =[
         {
