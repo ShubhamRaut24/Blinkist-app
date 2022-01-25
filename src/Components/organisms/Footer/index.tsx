@@ -1,71 +1,69 @@
-import { Grid, Typography } from "@mui/material";
-import React from "react";
-import image from "./blinkist_logo.png";
-
-
-
-
-function Footer() {
-
-    
-
-  const categeories = [
-    {
-      id: 1,
-      cat: "Editorial",
-      linkslist: [
-        "Book lists",
-        "What is Nonfiction",
-        "What to Read Next",
-        "Benefits of Reading",
-      ],
-    },
-    {
-      id: 2,
-      cat: "Useful Links",
-      linkslist: [
-        "Pricing",
-        "Blinkist Business",
-        "Gift Cards",
-        "Blinkist Magazine",
-        "Contact & Help",
-      ],
-    },
-    {
-      id: 1,
-      cat: "Company",
-      linkslist: ["About", "Careers", "Partners", "Code of Conduct"],
-    },
-  ];
-  return (
-    
-      <Grid container spacing={3} sx={{ background: "#f1f6f4" }}>
-        <Grid item xs={5} sm={4}>
-          <img
-            src={image}
-            alt="blinklist_log"
-            style={{ width: "200px", height: "100px" }}
-          />
-          <Typography variant="h5" sx={{ color: "#116be9" }}>
-            Big ideas in small packages <br />
-            Start learning now
-          </Typography>
-        </Grid>
-        {categeories.map((categories) => {
-          return (
-            <Grid item xs={3} sm={2}>
-              <Typography variant="body1" sx={{fontfamily: 'Cera Pro'}}>
-                <b>{categories.cat}</b>
-              </Typography>
-              {categories.linkslist.map((linkslist) => (
-                <p style={{ color: "#6d787e" }}>{linkslist}</p>
-              ))}
-            </Grid>
-          );
-        })}
-      </Grid>
-    
-  );
+import {Container, Box} from '@mui/material';
+import Logo from '../../molecules/Logo';
+import Typography from '../../atoms/Typography';
+const FooterComponent = (props:any)=>{
+    const data = [
+        {
+            'heading': 'Editorial',
+             'topics': [
+                 'Book lists',
+                 'What is Notfication?',
+                 'What to read next?',
+                 'Benefits of reading'
+             ]
+        },
+        {
+            'heading': 'Useful links',
+             'topics': [
+                 'Pricing',
+                 'Blinkist business',
+                 'Gift cards',
+                 'Blinkist magaine'
+             ]
+        },
+        {
+            'heading': 'Company',
+             'topics': [
+                 'About',
+                 'Carrer',
+                 'partners',
+                 'Code of Conduct'
+             ]
+        }
+    ]
+    return (
+        <Box {...props}>
+          <Container sx={{display: 'flex', justifyContent:'start'}} >
+            <Box sx={{marginRight:'150px'}}>
+                <Logo height= {32} width={32} url= '/assets/logo.png' name= 'Blinkist'/>
+                <Typography variant="h6" sx={{fontWeight: 'bold', color: '#0365F2',fontSize:'24px'}}>
+                    Big ideas in small packages<br/>
+                    Start learning now
+                </Typography>
+            </Box>
+            <Box sx={{display: 'flex', justifyContent: 'end',}}>
+                {
+                    data.map(curr => {
+                        return (<Box sx={{
+                            margin: '0px 32px'
+                        }}>
+                            <Typography pb={2} sx={{fontWeight: 'bold',display:'flex',justifyContent:'start',color:'#03314B',fontSize:'17px'}}>
+                                {curr.heading}
+                            </Typography>
+                            {
+                                curr.topics.map(currTopic => {
+                                    return <Typography pb={1} sx={{display:'flex',justifyContent:'start',color:'#6D787E'}}>
+                                        {currTopic}
+                                    </Typography>
+                                })
+                            }
+                        </Box>)
+                    })
+                }
+            </Box>
+        </Container>
+        </Box>   
+    )
 }
 
-export default Footer
+export default FooterComponent;

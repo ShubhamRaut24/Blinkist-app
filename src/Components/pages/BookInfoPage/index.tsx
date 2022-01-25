@@ -6,12 +6,77 @@ import Button from '../../atoms/Button';
 import Image from '../../atoms/Images';
 import Tab from '../../molecules/tabs';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import {useState} from 'react';
-import Footer from '../../organisms/Footer';
-import HeaderComponent from '../../organisms/Header';
+// import Footer from '../../organisms/Footer';
+// import HeaderComponent from '../../organisms/Header';
+import {AccessAlarm, LibraryAddTwoTone} from '@mui/icons-material';
+import {useState, useEffect} from 'react';
+import { useParams } from "react-router-dom";
+import CircularProgress from '@mui/material/CircularProgress';
+import theme from '../../../Themes/main'
+import {makeStyles} from '@mui/styles'
 
+const useStyle = makeStyles({
+    topHeading: {
+        margin: `${theme.spacing(3)} 0`
+    },
+    mainParent: {
+        display: 'flex',
+        justifyContent: 'space-between', 
+        marginBottom: theme.spacing(5)
+    },
+    parent: {
+        display: 'flex', 
+        flexDirection: 'column', 
+        justifyContent: 'space-between'
+    },
+    name: {
+        fontWeight: 'bold',
+        marginBottom: theme.spacing(4)
+    },
+    aim: {
+        marginBottom: theme.spacing(4)
+    },
+    writerName: {
+        color: 'gray', 
+        fontWeight: 'bold', 
+        marginBottom: theme.spacing(4)
+    },
+    timeInfo: {
+        display: 'flex',
+        alignItems: 'center'
+    },
+    alarmIcon: {
+        paddingRight: theme.spacing(0),
+        marginTop: theme.spacing(0)
+    },
+    time: {
+        color: theme.palette.textcolor.light, 
+        fontSize: theme.spacing(3) 
+    },
+    clickables: {
+        fontWeight: '700', 
+        display: 'flex',
+    },
+    statusBox: {
+        margin: `0 ${theme.spacing(4)} 0 0`        
+    },
+    status: {
+        margin: `0 ${theme.spacing(4)} 0 0`,
+    },
+    forward: {
+        color:'gray', 
+        margin: `0 ${theme.spacing(4)} 0 0` 
+    },
+    footer: {
+        marginBottom: '260px', 
+        borderBottom: '1px solid lightGrey', 
+        padding: `${theme.spacing(4)} 0px`
+    }
+});
 
-function BookInfoComponent(props:any){
+const BookInfoComponent = ({library, setLibrary}:any)=>{
+    const classes = useStyle();
+    const { bookId } = useParams();
     const tabData = [
         { 
           'value': 'synopsis',
@@ -24,82 +89,129 @@ function BookInfoComponent(props:any){
         { 
             'value': 'author',
             'label': 'About the author'
-          }
+        }
     ]
     const [currState, setCurrState] = useState(tabData[0].value);
-    const handleState = (state:string) => {
+    const [bookData, setBookData] = useState<any>(null);
+    const [currentlyReadingStatus, setcurrentlyReadingStatus] = useState<boolean>(true);
+    const handleState = (state:any) => {
         setCurrState(state);
     }
-
+    const checkInLibrary = ()=>{
+        for(let curr of library.currentlyReading){
+            console.log(curr.id,bookId)
+            if(curr.id == bookId){
+                setcurrentlyReadingStatus(true)
+                return;
+            }
+        }
+        setcurrentlyReadingStatus(false);
+    }
+    useEffect(() =>{
+        const processor = async (bookId: any) => {
+            let response = await fetch(`http://localhost:3000/books/${bookId}`);
+            const bookData = await response.json();
+            setBookData(bookData);
+        }
+        checkInLibrary();
+        processor(bookId);
+    }, []);
+    const libraryStatusHandler = async (event:any) => {
+        console.log("hello")
+        try{
+            let index = library.currentlyReading.findIndex((curr:any) => curr.id == bookId);
+            let currData = library.currentlyReading[index];
+            library.currentlyReading.splice(index, 1);
+            library.finishedBook.push({"id" : currData.id});
+            setLibrary(library);
+            let res = await  fetch("http://localhost:3000/library/", {
+                method: "PUT",
+                body: JSON.stringify(library),
+                headers: {
+                "Content-Type": "application/json"
+                }
+            });
+            checkInLibrary();
+            return await res.json();
+        }catch(err){
+            setLibrary(library);
+        }
+    }
     const moreInfo = ()=>{
         if(currState === tabData[0].value){
             return(
-                <Typography variant1='body2' sx={{fontWeight: '400',font:'Cera Pro', color:"#03314B" , fontSize:'16px'}}>
-                    Beyond Entrepreneurship 2.0 (2020) updates Jim Collins and Bill Lazier’s essential 1992 business handbook, Beyond Entrepreneurship for the entrepreneurs, visionaries, and innovators of today. This new edition combines the timeless business advice and strategy of the original text, supplemented with cutting-edge insights and case studies pertinent to today’s business world.
+                <Typography>
+                    {bookData.synopics}
                 </Typography>
             )
         }else if(currState === tabData[1].value){
             return(
-                <Typography variant1='body2' sx={{fontWeight: '400',font:'Cera Pro', color:"#03314B" , fontSize:'16px'}}>
-                    For you    
+                <Typography>
+                    {bookData.for}  
                 </Typography>
             )
         }else if(currState === tabData[2].value){
             return(
-                <Typography variant1='body2' sx={{fontWeight: '400',font:'Cera Pro', color:"#03314B" , fontSize:'16px'}}>
-                    Author       
+                <Typography>
+                    {bookData.about_author}       
                 </Typography>
             )
         }
     }
-
     return(
+        !bookData 
+                ?
+        <CircularProgress />
+            :
         <Container>
-          
-            <Typography variant1='body2' sx={{fontWeight: '400',font:'Cera Pro', color:"#03314B" , fontSize:'16px' ,margin: '20px 0px',display: 'flex',justifyContent: 'start', marginBottom: '40px'}}>
+            <Typography className={classes.topHeading} sx={{display:'flex',jusstifyContent:'start', fontSize:'18px'}}>
                 Get the key ideas from
             </Typography>
-            <Box sx={{display: 'flex',justifyContent: 'space-between', marginBottom: '40px'}}>
-                <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+            <Box className={classes.mainParent}>
+                <Box className={classes.parent}>
                     <Box>
-                        <Typography variant1='h4' sx={{fontWeight: '700',marginBottom: '20px' ,fontSize:'36px',color:"#03314B" ,display: 'flex',justifyContent: 'start'}}>
-                            Beyond Entrepreneurship 2.0
+                        <Typography className={classes.name} variant1='h4' sx={{display:'flex',jusstifyContent:'start',color:'#03314B' }}>
+                            {bookData.name}
                         </Typography>
-                        <Typography variant1='subtitle1' sx={{marginBottom: '20px',color:"#03314B" ,display: 'flex',justifyContent: 'start'}}>
-                            Turning Your Business into an Enduring Great Company
+                        <Typography className={classes.aim} sx={{display:'flex',jusstifyContent:'start',fontSize:'20px' ,fontWeight:'550',fontFamily:'Cera Pro',color:'#03314B' }} >
+                            {bookData.aim}
                         </Typography>
-                        <Typography variant1='body1' sx={{color: '#6D787E', fontWeight: '400', marginBottom: '20px' ,display: 'flex',justifyContent: 'start'}}>
-                            By Jim Collins and Bill Lazier
+                        <Typography className={classes.writerName} sx={{display:'flex',jusstifyContent:'start'}} >
+                            {bookData.writerName}
                         </Typography>
-                        <Box 
-                            sx={{display: 'flex',
-                            alignItems: 'center'
+                        <Box className={classes.timeInfo}
+                            sx={{
                             }}
                         >
-                            <Icon icon={<AccessTimeIcon sx={{padding: '0px 5px 0px 0px'}}/>} />
-                            <Typography sx={{color: "#6D787E", fontSize: "16px" }} variant1="body1">
-                                15-minuter read
+                            <Icon icon={<AccessTimeIcon className={classes.alarmIcon}  />} />
+                            <Typography  className={classes.time}   variant1="body">
+                                {bookData.timeRead}
                             </Typography>
                         </Box>
                     </Box>
-                    <Box sx={{fontWeight: '700', display: 'flex'}}>
-                        <Button children='Read now' size='medium' variant='outlined' color='success' sx={{margin: '12px 24px 12px 0px'}}/>
-                        <Button children='Finished Reading' size='medium' variant='contained' color='success' sx={{margin: '12px 24px 12px 0px'}}/>
-                        <Button children='Send to Kindle' size='medium' sx={{color:'#6D787E', margin: '12px 24px 12px 0px'}} endIcon={<ArrowForward />}/>
+                    <Box className={classes.clickables}>
+                        <Button children='Read now' size='medium' variant='outlined' color='success' className={classes.statusBox}/>
+                        {currentlyReadingStatus 
+                            ?
+                            <Button children= 'Finished Reading' size='medium' variant='contained' color='success' onClick={libraryStatusHandler} classesName={classes.status}/>
+                            :
+                            ''
+                        }
+                        <Button children='Send to Kindle' size='medium' className={classes.forward} endIcon={<ArrowForward />}/>
                     </Box>
                 </Box>
                 <Box>
-                    <Image height='300' width='280' src= 'https://s3-alpha-sig.figma.com/img/9ef8/4879/159f1a8fdf9dafb9b0fd0b3a69170efb?Expires=1643587200&Signature=eTAkUfgVUgo53N3nFnCOYz6Zt5lW-1koFH4gcYDI~f6yBVyc1R5AKw~AFoVBSIXW3DR7119UHPltjMz6w4S9sB0tNhB6gJtenTp-63eGG2EAb-VaoR-398sc4xSle7qZ59XD-4kVnzvDddUbA01~KTb7FLy42DdmQhEfbOb1GVpyZct8FWaTx9rhZ8NlIg-pGx5~JAgPgPX1IfZwrC1Uei06BeN6CmhNrLrgAPPir6liEdjSoHcEE99ksrzXl76pEL9LtQZEkOOjz7~8OE1YqC74QavqpPYCSViyj2TBzn-ZeRaBEAbTBfFNTN~giqnLS7ZNeab~dUvgmwJW84q5sg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'/>
+                    <Image height='300' width='280' src= {bookData.url}/>
                 </Box>
             </Box>
-            <Box sx={{marginBottom: '260px', borderBottom: '1px solid lightGrey', padding: '20px 0px'}}>
+            <Box className={classes.footer}>
                 <Tab stateHandler={handleState} tabData={tabData}/>
                 <Box sx={{height: '100px'}}>
                     {moreInfo()}
                 </Box>
             </Box>
-            <Footer></Footer>
         </Container>
+
     );
 }
 

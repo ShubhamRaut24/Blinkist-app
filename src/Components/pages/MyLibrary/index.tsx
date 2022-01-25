@@ -2,17 +2,24 @@
 import {useState, useEffect} from 'react';
 import {Container, Box, Grid} from '@mui/material';
 import Typography from '../../atoms/Typography';
-import {Theme} from '../../../Themes/theme';
 import Tab from '../../molecules/tabs';
 import Card from '../../organisms/Card';
 import CircularProgress from '@mui/material/CircularProgress';
-import HeaderComponent from '../../organisms/Header';
-import Footer from '../../organisms/Footer';
-const MyLibrary = () =>{
-    const [data, setData] = useState({
-        currentlyReading : [],
-        finishedBook: []
-    });
+import {Theme} from '../../../Themes/theme';
+import theme from '../../../Themes/main';
+import { makeStyles } from '@mui/styles';
+const useStyle = makeStyles({
+    cards: {
+        display: 'flex', 
+        alignItems: 'center', 
+        flexWrap: 'wrap'
+    }
+});
+
+const MyLibrary = ({books, setBooks, library, setLibrary}:any) =>{
+    const classes = useStyle();
+    let data = library;
+    let setData = setLibrary;
     const tabData = [
         { 
           'value': 'reading',
@@ -24,53 +31,48 @@ const MyLibrary = () =>{
         }
     ]
     const [currState, setCurrState] = useState(tabData[0].value);
-    useEffect(() => {
-        const processor = async () => {
-            let response = await fetch('/Data/db.json');
-            let data = await response.json();
-            setData(data.book);
-        };
-        processor();
-    }, []);
     const handleState = (state:string) => {
         setCurrState(state);
     }
 
     const cards = () => {
 
-        if(data == null){
+        if(books.length === 0){
             return  <CircularProgress />
         }
         else {
             if(currState === 'reading'){
-                return data.currentlyReading.map((currData:any) => {
-                    return <Card 
+                return data.currentlyReading.map((curr:any) => {
+                    let currData = books[Number.parseInt(curr.id)];
+                    return currData && <Card 
+                        cardId={currData.id}
                         key={currData.id}
-                        imgHeight= {250}
+                        imgHeight= {240}
                         url= {currData.url}
                         bookName= {currData.name}
                         writerName= {currData.writerName}
                         timeRead= {currData.timeRead}
-                        width= {300}
+                        width= {280}
                         inLibrary= {true}
-                        progress= {currData.progress}
+                        progress= {curr.progress}
                     />
                 })
             }else{
-                return data.finishedBook.map((currData:any) => {
+                return data.finishedBook.map((curr:any) => {
+                    let currData = books[Number.parseInt(curr.id)];
                     return <Card 
+                        cardId={currData.id}
                         key={currData.id}
-                        imgHeight= {250}
+                        imgHeight= {240}
                         url= {currData.url}
                         bookName= {currData.name}
                         writerName= {currData.writerName}
                         timeRead= {currData.timeRead}
-                        width= {300}
-                        inLibrary= {false}
-                        progress= {currData.progress}
-                        
+                        width= {280}
+                        inLibrary= {true}
+                        progress= {100}
                     />
-                })
+                });
             }
         }
     }
@@ -79,19 +81,16 @@ const MyLibrary = () =>{
     
 
     return (
-        <Container>
-           
-            <Typography   variant1="h4" theme={Theme} sx={{display:'flex',justifyContent: 'start',color:'#03314B', fontWeight:'700', font:'Cera Pro'}} >
+        <Container sx={{paddingTop: '50px', marginBottom:'100px'}}>
+            <Typography variant1="h5" theme={Theme} mb={4}  sx={{display:'flex',justifyContent:'start', color:'#03314B', fontStyle:'Roboto',fontSize:'36px'}}>
                 My Library
             </Typography>
             <Tab stateHandler={handleState} tabData={tabData}/>
-            <Grid spacing={2} sx={{display: 'flex', justifyContent: 'start', alignItems: 'center', flexWrap: 'wrap'}}>
+            <Box className={classes.cards} mt={4}>
                 { 
                     cards()
                 }
-            </Grid>
-           
-            
+            </Box>
         </Container>
     );
 }

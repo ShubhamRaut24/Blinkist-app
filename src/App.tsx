@@ -1,17 +1,23 @@
+import {ThemeProvider, CssBaseline} from '@mui/material';
 import React from 'react';
-
 import './App.css';
-import BookInfoComponent from './Components/pages/BookInfoPage';
+import  Template  from './Components/Template/Template';
+import theme from './Themes/main';
 
 
-import MyLibrary from './Components/pages/MyLibrary';
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 
 
 function App() {
   return (
     <div className="App">
-     <MyLibrary></MyLibrary>
-     <BookInfoComponent></BookInfoComponent>
+      <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Template />
+    </ThemeProvider>
+
     </div>
   );
 }

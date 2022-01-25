@@ -1,16 +1,17 @@
 import BannerComponent from "./index";
 import {ComponentStory, ComponentMeta} from '@storybook/react';
-export default {
+
+const Banner = {
   title: "Molecules/Banner",
   component: BannerComponent,
 }as ComponentMeta<typeof BannerComponent>;
 
-const Banner:ComponentStory<typeof BannerComponent>= (args:any) => <BannerComponent {...args} />;
+export const Template: ComponentStory<typeof BannerComponent>  = (args:any) => <BannerComponent {...args} />
 
-export const BannerComp = Banner.bind({});
-BannerComp.args = {
-//   src: "https://images.blinkist.com/images/books/608a9c296cee070007228a21/1_1/470.jpg",
-//   alt: "Not Found",
-//   width: "200px",
-//   height: "200px",
-};
+Template.args = {
+    heading: 'Explore Books on entrepreneurship',
+    discription: 'Everything you need to know about thriving on a shoestring budget, making your first million, and hiring right from the start.',
+    img: '/assets/banner.png'
+}
+
+export default Banner
