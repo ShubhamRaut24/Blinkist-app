@@ -6,9 +6,8 @@ import Footer from '../../Components/organisms/Footer';
 import {Box, Container} from '@mui/material';
 import Explore from '../../Components/organisms/Explorer';
 import {useState, useEffect} from 'react';
-import {BrowserRouter as Router, Route, Routes, Link, NavLink} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import CircularProgress from '@mui/material/CircularProgress';
-import theme from '../../Themes/main'
 import Blank from '../../Components/atoms/Blank';
 
 const TemplateComponent = () => {
@@ -83,7 +82,7 @@ const TemplateComponent = () => {
                     
                 </Box>
             </Router>
-            {blankStatus ? <Blank /> : '' }
+            {blankStatus ? <Blank/> : '' }
         </Box>
     )
 }

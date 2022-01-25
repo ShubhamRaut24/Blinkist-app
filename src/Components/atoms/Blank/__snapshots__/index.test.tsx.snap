@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blank Component 1`] = `
+<div
+  className="MuiBox-root css-iu3tcm"
+  data-testid="blankId"
+>
+  A
+</div>
+`;
