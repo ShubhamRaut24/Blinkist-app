@@ -1,11 +1,9 @@
 import React from 'react';
-import LogoComponent from ".";
-import renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
+import Logo from '.';
 
-
-test('Logo Component', () => {
-    const component = renderer.create(
-            <LogoComponent height= '30' url= '/assets/logo.png' name= 'Blinkist'></LogoComponent>
-    );
-    expect(component).toMatchSnapshot();
+test('Logo', () => {
+  render(<Logo name='blinkist'/>);
+  const linkElement = screen.getByText('blinkist')
+  expect(linkElement).toBeInTheDocument();
 });

@@ -1,9 +1,9 @@
+import React from 'react'
+import { render, screen } from "@testing-library/react";
+import BlankComponent from ".";
 
-import { render, screen } from '@testing-library/react';
-import IconComponent from '.';
-
-test('renders Icon', () => {
-  render(<IconComponent icon="hello"/>);
-  const iconElement = screen.getByText('hello');
-  expect(iconElement).toBeInTheDocument();
+it("renders a icon", () => {
+  render(<BlankComponent />);
+  const ReactElement = screen.getByTestId("icon");
+  expect(ReactElement).toBeInTheDocument();
 });

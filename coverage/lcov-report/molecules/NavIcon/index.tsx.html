@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for molecules/Logo/index.tsx</title>
+    <title>Code coverage report for molecules/NavIcon/index.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">molecules/Logo</a> index.tsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">molecules/NavIcon</a> index.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>4/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>5/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>4/5</span>
             </div>
         
             
@@ -82,15 +82,17 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -102,25 +104,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {Box} from '@mui/material';
-import Typography from '../../atoms/Typography/index';
-import Image from '../../atoms/Images/index'
-const LogoComponent = ({height=33, url, name, ...props}:any) =&gt; {
-    return (
-        &lt;Box sx={{
-                display: 'flex',
-                alignItems: 'center'
-            }} &gt;
-            &lt;Image height={height}  alt="blinkist" component="img" src={url}/&gt;
-            &lt;Typography 
-            sx={{fontWeight: 'bold', fontSize: '24px'}}&gt;
-                {name}
-            &lt;/Typography&gt;
+import Typography from '../../atoms/Typography';
+import {useState} from 'react';
+const NavIconComponent = (props: any)=&gt;{
+    const [hoverState, setHoverState] = useState(false);
+   
+    const  hoverStateHandler = <span class="fstat-no" title="function not covered" >()</span>=&gt;{
+<span class="cstat-no" title="statement not covered" >        setHoverState(!hoverState)</span>
+    }
+    return(
+        &lt;Box data-testid='nav-icon' sx={{display: 'flex', alignItems: 'center', justifyContent: 'left', width: 'auto', margin: '10px 10px 5px 0px'}} &gt;
+                {props.leftIcon ? props.leftIcon : ''}
+                &lt;Typography pl={1} onMouseEnter={hoverStateHandler} onMouseLeave={hoverStateHandler} sx={{color:`${hoverState ?<span class="branch-0 cbranch-no" title="branch not covered" >'blue ' </span>: '#6D787E'}`}}&gt;
+                    {props.label}
+                &lt;/Typography&gt;
+                {props.rightIcon ? props.rightIcon : ''}
         &lt;/Box&gt;
-        
-    );
+    )
 }
 &nbsp;
-export default LogoComponent;</pre></td></tr></table></pre>
+export default NavIconComponent;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

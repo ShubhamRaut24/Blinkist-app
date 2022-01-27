@@ -8,7 +8,7 @@ const NavIconComponent = (props: any)=>{
         setHoverState(!hoverState)
     }
     return(
-        <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'left', width: 'auto', margin: '10px 10px 5px 0px'}} >
+        <Box data-testid='nav-icon' sx={{display: 'flex', alignItems: 'center', justifyContent: 'left', width: 'auto', margin: '10px 10px 5px 0px'}} >
                 {props.leftIcon ? props.leftIcon : ''}
                 <Typography pl={1} onMouseEnter={hoverStateHandler} onMouseLeave={hoverStateHandler} sx={{color:`${hoverState ?'blue ' : '#6D787E'}`}}>
                     {props.label}

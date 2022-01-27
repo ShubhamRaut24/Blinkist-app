@@ -1,20 +1,17 @@
 import React from 'react';
 import ProgressBar from ".";
+import {render, screen } from '@testing-library/react';
 
-import renderer from 'react-test-renderer';
 
-const barStyled =
-{ height: '15px', 
-  opacity: '0.5', 
-  borderRadius: '0px 0px 10px 10px', 
-  backgroundColor: '#DFE8F6'
-}
-
-test('ProgressBar', () => {
-    const component = renderer.create(
-   
-            <ProgressBar value={60} sx={barStyled} variant="determinate"></ProgressBar>
-       
-    );
-    expect(component).toMatchSnapshot();
+test('should render progressbar', () => {
+  render(<ProgressBar value={60}/>);
+  const progressBarElement = screen.getByRole('progressbar');;
+  expect(progressBarElement).toBeInTheDocument();
 });
+
+test('should render progressbar with value', () => {
+    render(<ProgressBar value={60}/>);
+    const progressBarElement = screen.getByRole('progressbar');
+    expect((progressBarElement).getAttribute('aria-valuenow')).toBe('60');
+});
+  

@@ -1,10 +1,8 @@
+import { render, screen } from "@testing-library/react";
+import BlankComponent from ".";
 
-import BlankComponent from '.'
-import renderer from 'react-test-renderer';
-
-test('Blank Component', () => {
-    const component = renderer.create(
-            <BlankComponent/>
-    );
-    expect(component).toMatchSnapshot();
+it("renders a blankcomponent", () => {
+  render(<BlankComponent />);
+  const ReactElement = screen.getByTestId("blank");
+  expect(ReactElement).toBeInTheDocument();
 });

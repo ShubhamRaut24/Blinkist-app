@@ -1,12 +1,10 @@
 import React from 'react';
+import { render, screen } from "@testing-library/react";
 import Banner1 from ".";
 
-import renderer from 'react-test-renderer';
 
-
-test('Banner', () => {
-    const component = renderer.create(
-            <Banner1></Banner1>
-    );
-    expect(component).toMatchSnapshot();
-});
+test('Banner Heading', () => {
+    render(<Banner1 />);
+    const Element = screen.getByTestId('banner1');
+    expect(Element).toBeInTheDocument();
+  });

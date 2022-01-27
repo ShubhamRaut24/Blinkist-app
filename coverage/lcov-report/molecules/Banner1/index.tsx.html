@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for molecules/Logo/index.tsx</title>
+    <title>Code coverage report for molecules/Banner1/index.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">molecules/Logo</a> index.tsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">molecules/Banner1</a> index.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -32,7 +32,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
@@ -82,11 +82,18 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -101,26 +108,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {Box} from '@mui/material';
-import Typography from '../../atoms/Typography/index';
-import Image from '../../atoms/Images/index'
-const LogoComponent = ({height=33, url, name, ...props}:any) =&gt; {
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Grid } from '@material-ui/core'
+import Tp from '../../atoms/Typography/index';
+import Poster from './exploreposter.png';
+&nbsp;
+const Banner1 = () =&gt; {
     return (
-        &lt;Box sx={{
-                display: 'flex',
-                alignItems: 'center'
-            }} &gt;
-            &lt;Image height={height}  alt="blinkist" component="img" src={url}/&gt;
-            &lt;Typography 
-            sx={{fontWeight: 'bold', fontSize: '24px'}}&gt;
-                {name}
-            &lt;/Typography&gt;
-        &lt;/Box&gt;
-        
-    );
+        &lt;div data-testid='banner1'&gt;
+            &lt;Grid container style={{width:'980px',height:'270px',background:'#F1F6F4',position:'relative'}}&gt;
+                &lt;Grid item container direction='column' wrap='nowrap' style={{width:'618px',justifyContent:'center',}}&gt;
+                    &lt;Grid item style={{width:'319px',height:'90px',position:'absolute',margin:'45px 548px 129px 45px'}}&gt;
+                        &lt;Tp variant1='h3' sx={{fontWeight: '700',color: '#03314B', fontSize:"36px"}}&gt;Explore Books on entrepreneurship&lt;/Tp&gt;
+                    &lt;/Grid&gt;
+                    &lt;Grid item style={{width:'461px',height:'69px',position:'absolute',margin:'150px 406px 45px 45px'}}&gt;
+                        &lt;Tp variant1='subtitle2' sx={{lineHeight: "23px",color: "#6D787E", fontSize:"18px"}}&gt;Everything you need to know about thriving on a&lt;br/&gt; shoestring budget, making your first million, and hiring&lt;br/&gt; right from the start&lt;/Tp&gt;
+                    &lt;/Grid&gt;
+                &lt;/Grid&gt;
+                &lt;Grid item style={{width:'294px'}}&gt;
+                    &lt;img src={Poster} width='249px' height='230px' alt='not'&gt;&lt;/img&gt;
+                &lt;/Grid&gt;
+            &lt;/Grid&gt;
+        &lt;/div&gt;
+    )
 }
 &nbsp;
-export default LogoComponent;</pre></td></tr></table></pre>
+export default Banner1
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

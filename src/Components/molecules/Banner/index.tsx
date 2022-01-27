@@ -16,10 +16,10 @@ const BannerComponent = ({heading, discription, img}:any) =>{
             }}>
 
             <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                <Typography variant1="h4" sx={{fontWeight: 'bold', width: '300px'}}>
+                <Typography variant1="h4" sx={{fontWeight: 'bold', width: '300px'}} data-testid='heading'>
                     {heading}
                 </Typography>
-                <Typography  sx={{ fontWeight: 'bold', color: '#6D787E'}}>
+                <Typography  sx={{ fontWeight: 'bold', color: '#6D787E'}} data-testid='discription'>
                     {discription}
                 </Typography>
             </Box>
