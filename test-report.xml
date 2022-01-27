@@ -1,48 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="E:\React\blinkist\src\Components\molecules\Banner1\index.test.tsx">
-    <testCase name="Banner Heading" duration="223"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\ProgressBar\index.test.tsx">
-    <testCase name="should render progressbar" duration="168"/>
-    <testCase name="should render progressbar with value" duration="62"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Button\index.test.tsx">
-    <testCase name="renders Button" duration="255"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Blank\index.test.tsx">
-    <testCase name="renders a blankcomponent" duration="67"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Avatar\index.test.tsx">
-    <testCase name="renders a avatar" duration="76"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\molecules\Banner\index.test.tsx">
-    <testCase name="Banner Heading" duration="97"/>
-    <testCase name="Bannner discription" duration="23"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\molecules\NavIcon\index.test.tsx">
-    <testCase name="render the nav icon as well as label" duration="88"/>
-    <testCase name="Left icon" duration="17"/>
-    <testCase name="Right icon" duration="15"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\molecules\Logo\index.test.tsx">
-    <testCase name="Logo" duration="85"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Icons\index.test.tsx">
-    <testCase name="renders a icon" duration="68"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\organisms\Footer\index.test.tsx">
-    <testCase name="Footer Component" duration="226"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\organisms\Card\index.test.tsx">
-    <testCase name="BookCard" duration="186"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Input\index.test.tsx">
-    <testCase name="Input Component" duration="170"/>
-    <testCase name="should render input element" duration="107"/>
-    <testCase name="should be able to type in input" duration="75"/>
-  </file>
-  <file path="E:\React\blinkist\src\App.test.tsx">
-    <testCase name="renders App Component" duration="116"/>
+  <file path="E:\React\blinkist\src\Components\organisms\Explorer\index.test.tsx">
+    <testCase name="BookCard" duration="799"/>
   </file>
 </testExecutions>
