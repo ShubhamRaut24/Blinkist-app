@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner 1`] = `
+<ForwardRef(Box)
+  sx={
+    Object {
+      "backgroundColor": "#F1F6F4",
+      "boxSizing": "border-box",
+      "display": "flex",
+      "justifyContent": "center",
+      "padding": "4.93%",
+      "width": "auto",
+    }
+  }
+>
+  <ForwardRef(Box)
+    sx={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <TypographyComponents
+      sx={
+        Object {
+          "fontWeight": "bold",
+          "width": "300px",
+        }
+      }
+      variant1="h4"
+    >
+      Explore Books on entrepreneurship
+    </TypographyComponents>
+    <TypographyComponents
+      sx={
+        Object {
+          "color": "#6D787E",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Everything you need to know about thriving on a shoestring budget, making your first million, and hiring right from the start.
+    </TypographyComponents>
+  </ForwardRef(Box)>
+  <Image
+    src="/assets/banner.png"
+  />
+</ForwardRef(Box)>
+`;

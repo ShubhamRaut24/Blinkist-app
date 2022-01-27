@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="E:\React\blinkist\src\Components\molecules\Logo\index.test.tsx">
-    <testCase name="Logo Component" duration="125"/>
-  </file>
   <file path="E:\React\blinkist\src\Components\organisms\Footer\index.test.tsx">
-    <testCase name="Footer Component" duration="356"/>
+    <testCase name="Footer Component" duration="305"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Blank\index.test.tsx">
+    <testCase name="Blank Component" duration="54"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\molecules\Logo\index.test.tsx">
+    <testCase name="Logo Component" duration="68"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Typography\index.test.tsx">
+    <testCase name="renders Text passed from prop" duration="88"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Button\index.test.tsx">
+    <testCase name="renders Button" duration="431"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Avatar\index.test.tsx">
+    <testCase name="Unit Test - Avatar" duration="104"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Images\index.test.tsx">
+    <testCase name="renders Images" duration="163"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\molecules\Banner\index.test.tsx">
+    <testCase name="Banner" duration="21"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\ProgressBar\index.test.tsx">
+    <testCase name="ProgressBar" duration="78"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\molecules\Banner1\index.test.tsx">
+    <testCase name="Banner" duration="159"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Icons\index.test.tsx">
+    <testCase name="renders Icon" duration="87"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Input\index.test.tsx">
+    <testCase name="Input Component" duration="224"/>
   </file>
   <file path="E:\React\blinkist\src\Components\organisms\Explorer\index.test.tsx">
-    <testCase name="Explore" duration="404"/>
+    <testCase name="Explore" duration="538"/>
   </file>
   <file path="E:\React\blinkist\src\App.test.tsx">
-    <testCase name="renders App Component" duration="121"/>
+    <testCase name="renders App Component" duration="157"/>
   </file>
 </testExecutions>

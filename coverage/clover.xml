@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1643291841641" clover="3.2.0">
-  <project timestamp="1643291841641" name="All files">
-    <metrics statements="17" coveredstatements="16" conditionals="1" coveredconditionals="0" methods="7" coveredmethods="6" elements="25" coveredelements="22" complexity="0" loc="17" ncloc="17" packages="3" files="3" classes="3"/>
-    <package name="molecules.Logo">
-      <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="index.tsx" path="E:\React\blinkist\src\Components\molecules\Logo\index.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="3" type="cond" truecount="0" falsecount="1"/>
-        <line num="5" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="organisms.Explorer">
-      <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-      <file name="index.tsx" path="E:\React\blinkist\src\Components\organisms\Explorer\index.tsx">
-        <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="51" count="2" type="stmt"/>
-        <line num="54" count="2" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
-        <line num="70" count="1" type="stmt"/>
-        <line num="71" count="1" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="75" count="1" type="stmt"/>
-        <line num="182" count="1" type="stmt"/>
-        <line num="203" count="26" type="stmt"/>
-      </file>
-    </package>
-    <package name="organisms.Footer">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <file name="index.tsx" path="E:\React\blinkist\src\Components\organisms\Footer\index.tsx">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
-        <line num="56" count="6" type="stmt"/>
-        <line num="64" count="24" type="stmt"/>
-      </file>
-    </package>
+<coverage generated="1643294320125" clover="3.2.0">
+  <project timestamp="1643294320125" name="All files">
+    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
   </project>
 </coverage>

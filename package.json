@@ -36,6 +36,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "coverage": "npm test -- --coverage --testResultsProcessor=jest-sonar-reporter"
+    
   },
   "eslintConfig": {
     "extends": [
