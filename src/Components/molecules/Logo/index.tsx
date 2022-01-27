@@ -7,7 +7,7 @@ const LogoComponent = ({height=33, url, name, ...props}:any) => {
                 display: 'flex',
                 alignItems: 'center'
             }} >
-            <Image height={height} {...props} alt="blinkist" component="img" src={url}/>
+            <Image height={height}  alt="blinkist" component="img" src={url}/>
             <Typography 
             sx={{fontWeight: 'bold', fontSize: '24px'}}>
                 {name}

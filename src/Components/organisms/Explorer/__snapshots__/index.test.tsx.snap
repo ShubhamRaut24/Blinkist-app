@@ -1,0 +1,1094 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Explore 1`] = `
+<div
+  className="makeStyles-root-1 MuiBox-root css-1o7cj6j"
+>
+  <div
+    className="MuiContainer-root MuiContainer-maxWidthLg makeStyles-container-2 css-1oqqzyl-MuiContainer-root"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#6D787E",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <span
+        className="MuiTypography-root MuiTypography-subtitle3 css-apn13s-MuiTypography-root"
+        variant1="subtitle3"
+      >
+        Explore by category
+      </span>
+    </a>
+    <a
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#6D787E",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <span
+        className="MuiTypography-root MuiTypography-subtitle3 makeStyles-topicText-3 css-1ktd8v9-MuiTypography-root"
+        variant1="subtitle3"
+      >
+        See recently added titles
+      </span>
+    </a>
+    <a
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#6D787E",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <span
+        className="MuiTypography-root MuiTypography-subtitle3 makeStyles-topicText-3 css-1ktd8v9-MuiTypography-root"
+        variant1="subtitle3"
+      >
+        See popular titles
+      </span>
+    </a>
+  </div>
+  <div
+    className="MuiContainer-root MuiContainer-maxWidthLg makeStyles-navs-4 css-1oqqzyl-MuiContainer-root"
+  >
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="RocketLaunchOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 15c-.83 0-1.58.34-2.12.88C2.7 17.06 2 22 2 22s4.94-.7 6.12-1.88c.54-.54.88-1.29.88-2.12 0-1.66-1.34-3-3-3zm.71 3.71c-.28.28-2.17.76-2.17.76s.47-1.88.76-2.17c.17-.19.42-.3.7-.3.55 0 1 .45 1 1 0 .28-.11.53-.29.71zm10.71-5.06c6.36-6.36 4.24-11.31 4.24-11.31S16.71.22 10.35 6.58l-2.49-.5c-.65-.13-1.33.08-1.81.55L2 10.69l5 2.14L11.17 17l2.14 5 4.05-4.05c.47-.47.68-1.15.55-1.81l-.49-2.49zM7.41 10.83l-1.91-.82 1.97-1.97 1.44.29c-.57.83-1.08 1.7-1.5 2.5zm6.58 7.67-.82-1.91c.8-.42 1.67-.93 2.49-1.5l.29 1.44-1.96 1.97zM16 12.24c-1.32 1.32-3.38 2.4-4.04 2.73l-2.93-2.93c.32-.65 1.4-2.71 2.73-4.04 4.68-4.68 8.23-3.99 8.23-3.99s.69 3.55-3.99 8.23zM15 11c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Entrepreneurship
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="AccountBalanceOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.5 10h-2v7h2v-7zm6 0h-2v7h2v-7zm8.5 9H2v2h19v-2zm-2.5-9h-2v7h2v-7zm-7-6.74L16.71 6H6.29l5.21-2.74m0-2.26L2 6v2h19V6l-9.5-5z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Politics
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="DesktopWindowsOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Marketing & Sales
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ScienceOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 11.33 18 18H6l5-6.67V6h2m2.96-2H8.04c-.42 0-.65.48-.39.81L9 6.5v4.17L3.2 18.4c-.49.66-.02 1.6.8 1.6h16c.82 0 1.29-.94.8-1.6L15 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Science
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="SpaOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.49 9.63c-.18-2.79-1.31-5.51-3.43-7.63-2.14 2.14-3.32 4.86-3.55 7.63 1.28.68 2.46 1.56 3.49 2.63 1.03-1.06 2.21-1.94 3.49-2.63zm-3.44-4.44c.63 1.03 1.07 2.18 1.3 3.38-.47.3-.91.63-1.34.98-.42-.34-.87-.67-1.33-.97.25-1.2.71-2.35 1.37-3.39zM12 15.45c-.82-1.25-1.86-2.34-3.06-3.2-.13-.09-.27-.16-.4-.26.13.09.27.17.39.25C6.98 10.83 4.59 10 2 10c0 5.32 3.36 9.82 8.03 11.49.63.23 1.29.4 1.97.51.68-.12 1.33-.29 1.97-.51C18.64 19.82 22 15.32 22 10c-4.18 0-7.85 2.17-10 5.45zm1.32 4.15c-.44.15-.88.27-1.33.37-.44-.09-.87-.21-1.28-.36-3.29-1.18-5.7-3.99-6.45-7.35 1.1.26 2.15.71 3.12 1.33l-.02.01c.13.09.26.18.39.25l.07.04c.99.72 1.84 1.61 2.51 2.65L12 19.1l1.67-2.55c.69-1.05 1.55-1.95 2.53-2.66l.07-.05c.09-.05.18-.11.27-.17l-.01-.02c.98-.65 2.07-1.13 3.21-1.4-.75 3.37-3.15 6.18-6.42 7.35zm-4.33-7.32c-.02-.01-.04-.03-.05-.04 0 0 .01 0 .01.01.01.01.02.02.04.03z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Health & Nutrition
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="StairsOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 3h-4.42v3.33H11v3.33H8.42V16H6v2h4.42v-3.33H13v-3.33h2.58V8H18V6z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Personal Development
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="AttachMoneyOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Economics
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="HistoryToggleOffOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m15.1 19.37 1 1.74c-.96.44-2.01.73-3.1.84v-2.02c.74-.09 1.44-.28 2.1-.56zM4.07 13H2.05c.11 1.1.4 2.14.84 3.1l1.74-1c-.28-.66-.47-1.36-.56-2.1zM15.1 4.63l1-1.74c-.96-.44-2-.73-3.1-.84v2.02c.74.09 1.44.28 2.1.56zM19.93 11h2.02c-.11-1.1-.4-2.14-.84-3.1l-1.74 1c.28.66.47 1.36.56 2.1zM8.9 19.37l-1 1.74c.96.44 2.01.73 3.1.84v-2.02c-.74-.09-1.44-.28-2.1-.56zM11 4.07V2.05c-1.1.11-2.14.4-3.1.84l1 1.74c.66-.28 1.36-.47 2.1-.56zm7.36 3.1 1.74-1.01c-.63-.87-1.4-1.64-2.27-2.27l-1.01 1.74c.59.45 1.1.96 1.54 1.54zM4.63 8.9l-1.74-1c-.44.96-.73 2-.84 3.1h2.02c.09-.74.28-1.44.56-2.1zm15.3 4.1c-.09.74-.28 1.44-.56 2.1l1.74 1c.44-.96.73-2.01.84-3.1h-2.02zm-3.1 5.36 1.01 1.74c.87-.63 1.64-1.4 2.27-2.27l-1.74-1.01c-.45.59-.96 1.1-1.54 1.54zM7.17 5.64l-1-1.75c-.88.64-1.64 1.4-2.27 2.28l1.74 1.01c.44-.59.95-1.1 1.53-1.54zM5.64 16.83l-1.74 1c.63.87 1.4 1.64 2.27 2.27l1.01-1.74c-.59-.44-1.1-.95-1.54-1.53zM13 7h-2v5.41l4.29 4.29 1.41-1.41-3.7-3.7V7z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            History
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ConnectWithoutContactOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M11 14H9c0-4.97 4.03-9 9-9v2c-3.87 0-7 3.13-7 7zm7-3V9c-2.76 0-5 2.24-5 5h2c0-1.66 1.34-3 3-3zM7 4c0-1.11-.89-2-2-2s-2 .89-2 2 .89 2 2 2 2-.89 2-2zm4.45.5h-2C9.21 5.92 7.99 7 6.5 7h-3C2.67 7 2 7.67 2 8.5V11h6V8.74c1.86-.59 3.25-2.23 3.45-4.24zM19 17c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2zm1.5 1h-3c-1.49 0-2.71-1.08-2.95-2.5h-2c.2 2.01 1.59 3.65 3.45 4.24V22h6v-2.5c0-.83-.67-1.5-1.5-1.5z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Communication Skills
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ApartmentOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17 11V3H7v4H3v14h8v-4h2v4h8V11h-4zM7 19H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm4 4H9v-2h2v2zm0-4H9V9h2v2zm0-4H9V5h2v2zm4 8h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm4 12h-2v-2h2v2zm0-4h-2v-2h2v2z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Corporate Culture
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="CategoryOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m12 2-5.5 9h11L12 2zm0 3.84L13.93 9h-3.87L12 5.84zM17.5 13c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5zm0 7c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM3 21.5h8v-8H3v8zm2-6h4v4H5v-4z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Management & Leadership
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="AccessibleForwardOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="18"
+              cy="4.54"
+              r="2"
+            />
+            <path
+              d="M15 17h-2c0 1.65-1.35 3-3 3s-3-1.35-3-3 1.35-3 3-3v-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5zm3-3.5h-1.86l1.67-3.67C18.42 8.5 17.44 7 15.96 7h-5.2c-.81 0-1.54.47-1.87 1.2L8.22 10l1.92.53.65-1.53H13l-1.83 4.1c-.6 1.33.39 2.9 1.85 2.9H18v5h2v-5.5c0-1.1-.9-2-2-2z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Motivation & Inspiration
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="LocalAtmOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M11 17h2v-1h1c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1h-3v-1h4V8h-2V7h-2v1h-1c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h3v1H9v2h2v1zm9-13H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4V6h16v12z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Money & Investments
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="PsychologyOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m15.82 7.22-1 .4c-.21-.16-.43-.29-.67-.39L14 6.17c-.02-.1-.1-.17-.2-.17h-1.6c-.1 0-.18.07-.19.17l-.15 1.06c-.24.1-.47.23-.67.39l-1-.4c-.09-.03-.2 0-.24.09l-.8 1.38c-.05.09-.03.2.05.26l.85.66c-.03.12-.05.26-.05.39s.01.26.03.39l-.84.66c-.08.06-.1.17-.05.25l.8 1.39c.05.09.15.12.25.09l.99-.4c.21.16.43.29.68.39l.14 1.06c.02.1.1.17.2.17h1.6c.1 0 .18-.07.2-.17l.15-1.06c.24-.1.47-.23.67-.39l.99.4c.09.04.2 0 .24-.09l.8-1.39c.05-.09.03-.19-.05-.25l-.83-.66c.02-.13.03-.26.03-.39 0-.14-.01-.27-.03-.39l.85-.66c.08-.06.1-.17.05-.26l-.8-1.38c-.05-.09-.16-.12-.25-.09zM13 11.43c-.79 0-1.43-.64-1.43-1.43s.64-1.43 1.43-1.43 1.43.64 1.43 1.43-.64 1.43-1.43 1.43z"
+            />
+            <path
+              d="M19.94 9.06c-.43-3.27-3.23-5.86-6.53-6.05C13.27 3 13.14 3 13 3 9.47 3 6.57 5.61 6.08 9l-1.93 3.48c-.41.66.07 1.52.85 1.52h1v2c0 1.1.9 2 2 2h1v3h7v-4.68c2.62-1.25 4.35-4.08 3.94-7.26zm-5.05 5.57-.89.42V19h-3v-3H8v-4H6.7l1.33-2.33C8.21 7.06 10.35 5 13 5c2.76 0 5 2.24 5 5 0 2.09-1.29 3.88-3.11 4.63z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Psycology
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="TimerOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61 1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42C16.07 4.74 14.12 4 12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9 9-4.03 9-9c0-2.12-.74-4.07-1.97-5.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Productivity
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="WcOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.5 22v-7.5H4V9c0-1.1.9-2 2-2h3c1.1 0 2 .9 2 2v5.5H9.5V22h-4zM18 22v-6h3l-2.54-7.63C18.18 7.55 17.42 7 16.56 7h-.12c-.86 0-1.63.55-1.9 1.37L12 16h3v6h3zM7.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2zm9 0c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Sex & Relationships
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="PrecisionManufacturingOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m19.93 8.35-3.6 1.68L14 7.7V6.3l2.33-2.33 3.6 1.68c.38.18.82.01 1-.36.18-.38.01-.82-.36-1l-3.92-1.83c-.38-.18-.83-.1-1.13.2L13.78 4.4c-.18-.24-.46-.4-.78-.4-.55 0-1 .45-1 1v1H8.82C8.4 4.84 7.3 4 6 4 4.34 4 3 5.34 3 7c0 1.1.6 2.05 1.48 2.58L7.08 18H6c-1.1 0-2 .9-2 2v1h13v-1c0-1.1-.9-2-2-2h-1.62L8.41 8.77c.17-.24.31-.49.41-.77H12v1c0 .55.45 1 1 1 .32 0 .6-.16.78-.4l1.74 1.74c.3.3.75.38 1.13.2l3.92-1.83c.38-.18.54-.62.36-1-.18-.37-.62-.54-1-.36zM6 8c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm5.11 10H9.17l-2.46-8h.1l4.3 8z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Technology & the Future
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="SelfImprovementOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="6"
+              r="2"
+            />
+            <path
+              d="M21 16v-2c-2.24 0-4.16-.96-5.6-2.68l-1.34-1.6c-.38-.46-.94-.72-1.53-.72h-1.05c-.59 0-1.15.26-1.53.72l-1.34 1.6C7.16 13.04 5.24 14 3 14v2c2.77 0 5.19-1.17 7-3.25V15l-3.88 1.55c-.67.27-1.12.93-1.12 1.66C5 19.2 5.8 20 6.79 20H9v-.5c0-1.38 1.12-2.5 2.5-2.5h3c.28 0 .5.22.5.5s-.22.5-.5.5h-3c-.83 0-1.5.67-1.5 1.5v.5h7.21c.99 0 1.79-.8 1.79-1.79 0-.73-.45-1.39-1.12-1.66L14 15v-2.25c1.81 2.08 4.23 3.25 7 3.25z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Mindfulness & Hapiness
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="FamilyRestroomOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63C19.68 7.55 18.92 7 18.06 7h-.12c-.86 0-1.63.55-1.9 1.37l-.86 2.58c1.08.6 1.82 1.73 1.82 3.05v8h3zm-7.5-10.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5S11 9.17 11 10s.67 1.5 1.5 1.5zM5.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2zm2 16v-7H9V9c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v6h1.5v7h4zm6.5 0v-4h1v-4c0-.82-.68-1.5-1.5-1.5h-2c-.82 0-1.5.68-1.5 1.5v4h1v4h3z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Parenting
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="PeopleAltOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.67 13.13C18.04 14.06 19 15.32 19 17v3h4v-3c0-2.18-3.57-3.47-6.33-3.87zM15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4c-.47 0-.91.1-1.33.24C14.5 5.27 15 6.58 15 8s-.5 2.73-1.33 3.76c.42.14.86.24 1.33.24zm-6 0c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 7c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4zm6 5H3v-.99C3.2 16.29 6.3 15 9 15s5.8 1.29 6 2v1z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Society & Culture
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ParkOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17 12h2L12 2 5.05 12H7l-3.9 6h6.92v4h3.95v-4H21l-4-6zM6.79 16l3.9-6H8.88l3.13-4.5 3.15 4.5h-1.9l4 6H6.79z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Nature & the Environment
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="CakeOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 6c1.11 0 2-.9 2-2 0-.38-.1-.73-.29-1.03L12 0l-1.71 2.97c-.19.3-.29.65-.29 1.03 0 1.1.9 2 2 2zm6 3h-5V7h-2v2H6c-1.66 0-3 1.34-3 3v9c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-9c0-1.66-1.34-3-3-3zm1 11H5v-3c.9-.01 1.76-.37 2.4-1.01l1.09-1.07 1.07 1.07c1.31 1.31 3.59 1.3 4.89 0l1.08-1.07 1.07 1.07c.64.64 1.5 1 2.4 1.01v3zm0-4.5c-.51-.01-.99-.2-1.35-.57l-2.13-2.13-2.14 2.13c-.74.74-2.03.74-2.77 0L8.48 12.8l-2.14 2.13c-.35.36-.83.56-1.34.57V12c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v3.5z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Biography & Memoir
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="SchoolOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Carrer & Success
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="LibraryBooksOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM10 9h8v2h-8zm0 3h4v2h-4zm0-6h8v2h-8z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Education
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ManageAccountsOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 18v-.65c0-.34.16-.66.41-.81C6.1 15.53 8.03 15 10 15c.03 0 .05 0 .08.01.1-.7.3-1.37.59-1.98-.22-.02-.44-.03-.67-.03-2.42 0-4.68.67-6.61 1.82-.88.52-1.39 1.5-1.39 2.53V20h9.26c-.42-.6-.75-1.28-.97-2H4zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm10.75 10c0-.22-.03-.42-.06-.63l1.14-1.01-1-1.73-1.45.49c-.32-.27-.68-.48-1.08-.63L18 11h-2l-.3 1.49c-.4.15-.76.36-1.08.63l-1.45-.49-1 1.73 1.14 1.01c-.03.21-.06.41-.06.63s.03.42.06.63l-1.14 1.01 1 1.73 1.45-.49c.32.27.68.48 1.08.63L16 21h2l.3-1.49c.4-.15.76-.36 1.08-.63l1.45.49 1-1.73-1.14-1.01c.03-.21.06-.41.06-.63zM17 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Religion & Sprituality
+          </p>
+          
+        </div>
+      </a>
+    </div>
+    <div
+      className="makeStyles-nav-5 MuiBox-root css-0"
+    >
+      <a
+        className=""
+        href="/EntrepreneurPage"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#6D787E",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="MuiBox-root css-t9uf4n"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="BorderColorOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m16.81 8.94-3.75-3.75L4 14.25V18h3.75l9.06-9.06zM6 16v-.92l7.06-7.06.92.92L6.92 16H6zm13.71-9.96c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83zM2 20h20v4H2z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-whbop4-MuiTypography-root"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Creativity
+          </p>
+          
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;

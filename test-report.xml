@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="E:\React\blinkist\src\Components\pages\BookInfoPage\index.test.tsx">
-  </file>
-  <file path="E:\React\blinkist\src\Components\molecules\tabs\index.test.tsx">
-  </file>
-  <file path="E:\React\blinkist\src\Components\molecules\Search\index.test.tsx">
-  </file>
-  <file path="E:\React\blinkist\src\Components\organisms\Card\index.test.tsx">
-  </file>
-  <file path="E:\React\blinkist\src\Components\molecules\NavIcon\index.test.tsx">
-  </file>
-  <file path="E:\React\blinkist\src\Components\Template\TemplateComponent.test.tsx">
+  <file path="E:\React\blinkist\src\Components\molecules\Logo\index.test.tsx">
+    <testCase name="Logo Component" duration="125"/>
   </file>
   <file path="E:\React\blinkist\src\Components\organisms\Footer\index.test.tsx">
+    <testCase name="Footer Component" duration="356"/>
   </file>
   <file path="E:\React\blinkist\src\Components\organisms\Explorer\index.test.tsx">
+    <testCase name="Explore" duration="404"/>
+  </file>
+  <file path="E:\React\blinkist\src\App.test.tsx">
+    <testCase name="renders App Component" duration="121"/>
   </file>
 </testExecutions>
