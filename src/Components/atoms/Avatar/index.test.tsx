@@ -3,6 +3,6 @@ import Avatar from ".";
 
 it("Unit Test - Avatar", () => {
   render(<Avatar />);
-  const letter = screen.getByText(/A/i);
-  expect(letter).toBeInTheDocument();
+  const avatarElement = screen.getByText(/A/i);
+  expect(avatarElement).toBeInTheDocument();
 });

@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="E:\React\blinkist\src\Components\atoms\Typography\index.test.tsx">
-    <testCase name="renders learn react link" duration="114"/>
+  <file path="E:\React\blinkist\src\Components\atoms\Images\index.test.tsx">
+    <testCase name="renders Images" duration="208"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Avatar\index.test.tsx">
+    <testCase name="Unit Test - Avatar" duration="130"/>
   </file>
   <file path="E:\React\blinkist\src\Components\atoms\Button\index.test.tsx">
-    <testCase name="renders Text passed from prop" duration="321"/>
+    <testCase name="renders Button" duration="403"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Icons\index.test.tsx">
+    <testCase name="renders Icon" duration="99"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Input\index.test.tsx">
+    <testCase name="renders Input Component" duration="357"/>
   </file>
   <file path="E:\React\blinkist\src\App.test.tsx">
-    <testCase name="renders learn react link" duration="284">
-      <failure message="TestingLibraryElementError: Unable to find an element with the text: /learn react/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible."><![CDATA[TestingLibraryElementError: Unable to find an element with the text: /learn react/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+    <testCase name="renders learn react link" duration="439">
+      <failure message="TestingLibraryElementError: Unable to find an accessible element with the role &quot;application&quot;"><![CDATA[TestingLibraryElementError: Unable to find an accessible element with the role "application"
+
+Here are the accessible roles:
+
+  progressbar:
+
+  Name "":
+  <span
+    class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1gi5zzc-MuiCircularProgress-root"
+    role="progressbar"
+    style="width: 40px; height: 40px;"
+  />
+
+  --------------------------------------------------
 
 Ignored nodes: comments, <script />, <style />
 <body>
@@ -45,7 +67,7 @@ Ignored nodes: comments, <script />, <style />
     at Object.getElementError (E:\React\blinkist\node_modules\@testing-library\dom\dist\config.js:38:19)
     at E:\React\blinkist\node_modules\@testing-library\dom\dist\query-helpers.js:90:38
     at E:\React\blinkist\node_modules\@testing-library\dom\dist\query-helpers.js:62:17
-    at getByText (E:\React\blinkist\node_modules\@testing-library\dom\dist\query-helpers.js:111:19)
+    at getByRole (E:\React\blinkist\node_modules\@testing-library\dom\dist\query-helpers.js:111:19)
     at Object.<anonymous> (E:\React\blinkist\src\App.test.tsx:7:30)
     at Promise.then.completed (E:\React\blinkist\node_modules\jest-circus\build\utils.js:391:28)
     at new Promise (<anonymous>)
