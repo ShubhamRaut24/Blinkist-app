@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="E:\React\blinkist\src\Components\atoms\Blank\index.test.tsx">
-    <testCase name="Blank Component" duration="69"/>
+  <file path="E:\React\blinkist\src\Components\atoms\Typography\index.test.tsx">
+    <testCase name="renders learn react link" duration="114"/>
   </file>
-  <file path="E:\React\blinkist\src\Components\atoms\ProgressBar\index.test.tsx">
-    <testCase name="ProgressBar" duration="95"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Avatar\index.test.tsx">
-    <testCase name="Unit Test - Avatar" duration="118"/>
+  <file path="E:\React\blinkist\src\Components\atoms\Button\index.test.tsx">
+    <testCase name="renders Text passed from prop" duration="321"/>
   </file>
   <file path="E:\React\blinkist\src\App.test.tsx">
-    <testCase name="renders learn react link" duration="259">
+    <testCase name="renders learn react link" duration="284">
       <failure message="TestingLibraryElementError: Unable to find an element with the text: /learn react/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible."><![CDATA[TestingLibraryElementError: Unable to find an element with the text: /learn react/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
 
 Ignored nodes: comments, <script />, <style />
