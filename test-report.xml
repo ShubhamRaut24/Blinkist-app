@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="E:\React\blinkist\src\Components\organisms\Footer\index.test.tsx">
-    <testCase name="Footer Component" duration="305"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Blank\index.test.tsx">
-    <testCase name="Blank Component" duration="54"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\molecules\Logo\index.test.tsx">
-    <testCase name="Logo Component" duration="68"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Typography\index.test.tsx">
-    <testCase name="renders Text passed from prop" duration="88"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Button\index.test.tsx">
-    <testCase name="renders Button" duration="431"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Avatar\index.test.tsx">
-    <testCase name="Unit Test - Avatar" duration="104"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Images\index.test.tsx">
-    <testCase name="renders Images" duration="163"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\molecules\Banner\index.test.tsx">
-    <testCase name="Banner" duration="21"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\ProgressBar\index.test.tsx">
-    <testCase name="ProgressBar" duration="78"/>
+    <testCase name="Footer Component" duration="338"/>
   </file>
   <file path="E:\React\blinkist\src\Components\molecules\Banner1\index.test.tsx">
-    <testCase name="Banner" duration="159"/>
+    <testCase name="Banner" duration="268"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Typography\index.test.tsx">
+    <testCase name="renders Text passed from prop" duration="92"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Button\index.test.tsx">
+    <testCase name="renders Button" duration="300"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Avatar\index.test.tsx">
+    <testCase name="Unit Test - Avatar" duration="82"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\molecules\Banner\index.test.tsx">
+    <testCase name="Banner" duration="40"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\molecules\Logo\index.test.tsx">
+    <testCase name="Logo Component" duration="107"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Blank\index.test.tsx">
+    <testCase name="Blank Component" duration="71"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\ProgressBar\index.test.tsx">
+    <testCase name="ProgressBar" duration="81"/>
   </file>
   <file path="E:\React\blinkist\src\Components\atoms\Icons\index.test.tsx">
-    <testCase name="renders Icon" duration="87"/>
+    <testCase name="renders Icon" duration="84"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Images\index.test.tsx">
+    <testCase name="renders Images" duration="135"/>
   </file>
   <file path="E:\React\blinkist\src\Components\atoms\Input\index.test.tsx">
-    <testCase name="Input Component" duration="224"/>
+    <testCase name="Input Component" duration="254"/>
   </file>
   <file path="E:\React\blinkist\src\Components\organisms\Explorer\index.test.tsx">
-    <testCase name="Explore" duration="538"/>
+    <testCase name="Explore" duration="644"/>
   </file>
   <file path="E:\React\blinkist\src\App.test.tsx">
-    <testCase name="renders App Component" duration="157"/>
+    <testCase name="renders App Component" duration="139"/>
   </file>
 </testExecutions>
