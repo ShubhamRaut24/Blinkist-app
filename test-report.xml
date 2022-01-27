@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="E:\React\blinkist\src\Components\molecules\Search\index.test.tsx">
-    <testCase name="renders Text passed from prop" duration="166"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\organisms\Explorer\index.test.tsx">
-    <testCase name="Explore" duration="286"/>
+  <file path="E:\React\blinkist\src\Components\pages\MyLibrary\index.test.tsx">
+    <testCase name="MyLibrary Component" duration="323">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;map&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'map')
+    at cards (E:\React\blinkist\src\Components\pages\MyLibrary\index.tsx:45:46)
+    at MyLibrary (E:\React\blinkist\src\Components\pages\MyLibrary\index.tsx:91:21)
+    at renderWithHooks (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:6016:18)
+    at mountIndeterminateComponent (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:8744:13)
+    at beginWork (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:9966:16)
+    at performUnitOfWork (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:13800:12)
+    at workLoopSync (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:13728:5)
+    at renderRootSync (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:13691:7)
+    at performSyncWorkOnRoot (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:13404:18)
+    at E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:2537:26
+    at unstable_runWithPriority (E:\React\blinkist\node_modules\scheduler\cjs\scheduler.development.js:468:12)
+    at runWithPriority (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:2486:10)
+    at flushSyncCallbackQueueImpl (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:2532:9)
+    at flushSyncCallbackQueue (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:2519:3)
+    at scheduleUpdateOnFiber (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:13004:9)
+    at updateContainer (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:16454:3)
+    at Object.create (E:\React\blinkist\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:17149:3)
+    at Object.<anonymous> (E:\React\blinkist\src\Components\pages\MyLibrary\index.test.tsx:181:32)
+    at Promise.then.completed (E:\React\blinkist\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (E:\React\blinkist\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (E:\React\blinkist\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (E:\React\blinkist\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (E:\React\blinkist\node_modules\jest-circus\build\run.js:66:9)
+    at run (E:\React\blinkist\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (E:\React\blinkist\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (E:\React\blinkist\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (E:\React\blinkist\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (E:\React\blinkist\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (E:\React\blinkist\node_modules\jest-runner\build\testWorker.js:133:12)]]></failure>
+    </testCase>
   </file>
   <file path="E:\React\blinkist\src\Components\pages\EntrepreneurPage\index.test.tsx">
-    <testCase name="BookInfo Component" duration="115">
+    <testCase name="BookInfo Component" duration="160">
       <failure message="TypeError: curr is not iterable"><![CDATA[TypeError: curr is not iterable
     at checker (E:\React\blinkist\src\Components\pages\EntrepreneurPage\index.tsx:40:33)
     at checkInLibrary (E:\React\blinkist\src\Components\pages\EntrepreneurPage\index.tsx:47:26)
@@ -47,85 +77,10 @@
     at Object.worker (E:\React\blinkist\node_modules\jest-runner\build\testWorker.js:133:12)]]></failure>
     </testCase>
   </file>
+  <file path="E:\React\blinkist\src\Components\Template\TemplateComponent.test.tsx">
+    <testCase name="renders Template Component" duration="143"/>
+  </file>
   <file path="E:\React\blinkist\src\App.test.tsx">
-    <testCase name="renders learn react link" duration="345">
-      <failure message="TestingLibraryElementError: Unable to find an accessible element with the role &quot;application&quot;"><![CDATA[TestingLibraryElementError: Unable to find an accessible element with the role "application"
-
-Here are the accessible roles:
-
-  progressbar:
-
-  Name "":
-  <span
-    class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1gi5zzc-MuiCircularProgress-root"
-    role="progressbar"
-    style="width: 40px; height: 40px;"
-  />
-
-  --------------------------------------------------
-
-Ignored nodes: comments, <script />, <style />
-<body>
-  <div>
-    <div
-      class="App"
-    >
-      <div
-        class="MuiContainer-root MuiContainer-maxWidthLg css-14uxf7f-MuiContainer-root"
-      >
-        <span
-          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1gi5zzc-MuiCircularProgress-root"
-          role="progressbar"
-          style="width: 40px; height: 40px;"
-        >
-          <svg
-            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-            viewBox="22 22 44 44"
-          >
-            <circle
-              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
-              cx="44"
-              cy="44"
-              fill="none"
-              r="20.2"
-              stroke-width="3.6"
-            />
-          </svg>
-        </span>
-      </div>
-    </div>
-  </div>
-</body>
-    at Object.getElementError (E:\React\blinkist\node_modules\@testing-library\dom\dist\config.js:38:19)
-    at E:\React\blinkist\node_modules\@testing-library\dom\dist\query-helpers.js:90:38
-    at E:\React\blinkist\node_modules\@testing-library\dom\dist\query-helpers.js:62:17
-    at getByRole (E:\React\blinkist\node_modules\@testing-library\dom\dist\query-helpers.js:111:19)
-    at Object.<anonymous> (E:\React\blinkist\src\App.test.tsx:7:30)
-    at Promise.then.completed (E:\React\blinkist\node_modules\jest-circus\build\utils.js:391:28)
-    at new Promise (<anonymous>)
-    at callAsyncCircusFn (E:\React\blinkist\node_modules\jest-circus\build\utils.js:316:10)
-    at _callCircusTest (E:\React\blinkist\node_modules\jest-circus\build\run.js:218:40)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at _runTest (E:\React\blinkist\node_modules\jest-circus\build\run.js:155:3)
-    at _runTestsForDescribeBlock (E:\React\blinkist\node_modules\jest-circus\build\run.js:66:9)
-    at run (E:\React\blinkist\node_modules\jest-circus\build\run.js:25:3)
-    at runAndTransformResultsToJestFormat (E:\React\blinkist\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
-    at jestAdapter (E:\React\blinkist\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
-    at runTestInternal (E:\React\blinkist\node_modules\jest-runner\build\runTest.js:389:16)
-    at runTest (E:\React\blinkist\node_modules\jest-runner\build\runTest.js:475:34)
-    at Object.worker (E:\React\blinkist\node_modules\jest-runner\build\testWorker.js:133:12)]]></failure>
-    </testCase>
-  </file>
-  <file path="E:\React\blinkist\src\Components\organisms\Footer\index.test.tsx">
-    <testCase name="renders Footer Component" duration="179"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\molecules\tabs\index.test.tsx">
-    <testCase name="renders Tab" duration="246"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\organisms\Card\index.test.tsx">
-    <testCase name="Card" duration="73"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\pages\BookInfoPage\index.test.tsx">
-    <testCase name="BookInfo Component" duration="67"/>
+    <testCase name="renders App Component" duration="166"/>
   </file>
 </testExecutions>

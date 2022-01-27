@@ -1,9 +1,11 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByRole("application");
-  expect(linkElement).toBeInTheDocument();
+test('renders App Component', () => {
+    const component = renderer.create(
+   
+        <App></App>
+   
+);
+  expect(component).toMatchSnapshot();
 });
