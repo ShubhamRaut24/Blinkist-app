@@ -1,10 +1,10 @@
-import FooterComponent from '.';
+import Footer from '.';
 import renderer from 'react-test-renderer';
 
 
 test('Footer Component', () => {
     const component = renderer.create(
-        <FooterComponent />
+        <Footer />
     );
   
   expect(component).toMatchSnapshot();

@@ -4,7 +4,7 @@ import Poster from './exploreposter.png';
 
 const Banner1 = () => {
     return (
-        <div data-testid='banner1'>
+        <div data-testid='banner11'>
             <Grid container style={{width:'980px',height:'270px',background:'#F1F6F4',position:'relative'}}>
                 <Grid item container direction='column' wrap='nowrap' style={{width:'618px',justifyContent:'center',}}>
                     <Grid item style={{width:'319px',height:'90px',position:'absolute',margin:'45px 548px 129px 45px'}}>

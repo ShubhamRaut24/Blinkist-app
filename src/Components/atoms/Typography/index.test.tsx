@@ -4,7 +4,7 @@ import TypographyComponents from '.';
 import { ThemeProvider } from '@mui/material/styles';
 import {Theme} from '../../../Themes/theme';
  
-test('renders Text passed from prop', () => {
+test('It renders Text passed from prop', () => {
 
   render(
     <ThemeProvider theme={Theme} >

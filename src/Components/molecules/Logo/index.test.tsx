@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Logo from '.';
 
-test('Logo', () => {
+test('it should renderLogo', () => {
   render(<Logo name='blinkist'/>);
   const linkElement = screen.getByText('blinkist')
   expect(linkElement).toBeInTheDocument();

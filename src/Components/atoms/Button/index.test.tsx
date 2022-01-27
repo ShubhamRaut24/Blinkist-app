@@ -1,9 +1,9 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react';
-import ButtonComponent from '.';
+import Button from '.';
 
 test('renders Button', () => {
-  render(<ButtonComponent children="Hello" />);
+  render(<Button children="Hello" />);
   const typoElement = screen.getByRole('button');
   expect(typoElement).toBeInTheDocument();
 });

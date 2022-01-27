@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import CustomAvatar from ".";
+import Avatar from ".";
 
 it("renders a avatar", () => {
-  render(<CustomAvatar />);
+  render(<Avatar/>);
   const ReactElement = screen.getByTestId("avatar");
   expect(ReactElement).toBeInTheDocument();
 });

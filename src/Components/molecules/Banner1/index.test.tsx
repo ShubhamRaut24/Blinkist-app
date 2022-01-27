@@ -5,6 +5,6 @@ import Banner1 from ".";
 
 test('Banner Heading', () => {
     render(<Banner1 />);
-    const Element = screen.getByTestId('banner1');
+    const Element = screen.getByTestId('banner11');
     expect(Element).toBeInTheDocument();
   });
