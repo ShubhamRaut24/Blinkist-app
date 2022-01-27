@@ -1,6 +1,7 @@
 import {Container, Box} from '@mui/material';
 import Logo from '../../molecules/Logo';
 import Typography from '../../atoms/Typography';
+
 const FooterComponent = (props:any)=>{
     const data = [
         {
@@ -32,7 +33,15 @@ const FooterComponent = (props:any)=>{
         }
     ]
     return (
-        <Box {...props}>
+        <Box sx={{
+          height:'270px',
+          width:'100%', 
+          backgroundColor: '#F1F6F4',
+          display: 'flex',
+          position: 'sticky',
+          top: '100vh',
+          padding: '24px 0px',
+          marginTop: '24px'}} >
           <Container sx={{display: 'flex', justifyContent:'start'}} >
             <Box sx={{marginRight:'150px'}}>
                 <Logo height= {32} width={32} url= '/assets/logo.png' name= 'Blinkist'/>

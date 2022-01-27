@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Footer Component 1`] = `
+<div
+  className="MuiBox-root css-1sp4l3i"
+>
+  <div
+    className="MuiContainer-root MuiContainer-maxWidthLg css-1imjkd-MuiContainer-root"
+  >
+    <div
+      className="MuiBox-root css-315n33"
+    >
+      <div
+        className="MuiBox-root css-70qvj9"
+      >
+        <img
+          alt="not found"
+          className="MuiBox-root css-1o01xn9"
+          src="/assets/logo.png"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-1vrfq90-MuiTypography-root"
+        >
+          Blinkist
+        </p>
+      </div>
+      <h6
+        className="MuiTypography-root MuiTypography-h6 css-1e9lyz8-MuiTypography-root"
+      >
+        Big ideas in small packages
+        <br />
+        Start learning now
+      </h6>
+    </div>
+    <div
+      className="MuiBox-root css-ckyhk3"
+    >
+      <div
+        className="MuiBox-root css-6iaxro"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-juep0h-MuiTypography-root"
+        >
+          Editorial
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          Book lists
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          What is Notfication?
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          What to read next?
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          Benefits of reading
+        </p>
+      </div>
+      <div
+        className="MuiBox-root css-6iaxro"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-juep0h-MuiTypography-root"
+        >
+          Useful links
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          Pricing
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          Blinkist business
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          Gift cards
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          Blinkist magaine
+        </p>
+      </div>
+      <div
+        className="MuiBox-root css-6iaxro"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-juep0h-MuiTypography-root"
+        >
+          Company
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          About
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          Carrer
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          partners
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+        >
+          Code of Conduct
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

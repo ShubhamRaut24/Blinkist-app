@@ -67,16 +67,7 @@ const TemplateComponent = () => {
                             }
                         />
                     </Routes>
-                    <Footer sx={{
-                        height:'270px',
-                        width:'100%', 
-                        backgroundColor: '#F1F6F4',
-                        display: 'flex',
-                        position: 'sticky',
-                        top: '100vh',
-                        padding: '24px 0px',
-                        marginTop: '24px'
-                    }} />
+                    <Footer  />
                    
                     {exploreOption ? <Explore /> : ''}
                     

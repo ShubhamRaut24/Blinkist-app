@@ -4,6 +4,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import tabTheme from '../../../Themes/tabsTheme';
 import { ThemeProvider } from '@mui/material/styles';
+
 export default function TabsWrappedLabel({tabData, ...props}: any) {
   const [value, setValue] = React.useState(tabData && tabData[0].value);
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
