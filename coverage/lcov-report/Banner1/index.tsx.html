@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for index.tsx</title>
+    <title>Code coverage report for Banner1/index.tsx</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="prettify.css" />
-    <link rel="stylesheet" href="base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(sort-arrow-sprite.png);
+            background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> index.tsx</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">Banner1</a> index.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -88,16 +88,7 @@
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -122,60 +113,48 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Image from '../../atoms/Images/index';
-import Typography from '../../atoms/Typography/index';
-import {Box,} from '@mui/material';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Grid } from '@material-ui/core'
+import Tp from '../../atoms/Typography/index';
+import Poster from './exploreposter.png';
 &nbsp;
-&nbsp;
-&nbsp;
-const BannerComponent = ({heading, discription, img}:any) =&gt;{
+const Banner1 = () =&gt; {
     return (
-        &lt;Box sx={{
-                backgroundColor : '#F1F6F4',
-                width: 'auto',
-                display: 'flex',
-                padding: '4.93%',
-                boxSizing: 'border-box',
-                justifyContent: 'center'
-            }}&gt;
-&nbsp;
-            &lt;Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}&gt;
-                &lt;Typography variant1="h4" sx={{fontWeight: 'bold', width: '300px'}}&gt;
-                    {heading}
-                &lt;/Typography&gt;
-                &lt;Typography  sx={{ fontWeight: 'bold', color: '#6D787E'}}&gt;
-                    {discription}
-                &lt;/Typography&gt;
-            &lt;/Box&gt;
-            &lt;Image 
-                src={img}
-            /&gt;
-        &lt;/Box&gt;
-    );
+        &lt;&gt;
+            &lt;Grid container style={{width:'980px',height:'270px',background:'#F1F6F4',position:'relative'}}&gt;
+                &lt;Grid item container direction='column' wrap='nowrap' style={{width:'618px',justifyContent:'center',}}&gt;
+                    &lt;Grid item style={{width:'319px',height:'90px',position:'absolute',margin:'45px 548px 129px 45px'}}&gt;
+                        &lt;Tp variant1='h3' sx={{fontWeight: '700',color: '#03314B', fontSize:"36px"}}&gt;Explore Books on entrepreneurship&lt;/Tp&gt;
+                    &lt;/Grid&gt;
+                    &lt;Grid item style={{width:'461px',height:'69px',position:'absolute',margin:'150px 406px 45px 45px'}}&gt;
+                        &lt;Tp variant1='subtitle2' sx={{lineHeight: "23px",color: "#6D787E", fontSize:"18px"}}&gt;Everything you need to know about thriving on a&lt;br/&gt; shoestring budget, making your first million, and hiring&lt;br/&gt; right from the start&lt;/Tp&gt;
+                    &lt;/Grid&gt;
+                &lt;/Grid&gt;
+                &lt;Grid item style={{width:'294px'}}&gt;
+                    &lt;img src={Poster} width='249px' height='230px' alt='not'&gt;&lt;/img&gt;
+                &lt;/Grid&gt;
+            &lt;/Grid&gt;
+        &lt;/&gt;
+    )
 }
 &nbsp;
-export default BannerComponent;</pre></td></tr></table></pre>
+export default Banner1
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Thu Jan 27 2022 13:16:15 GMT+0530 (India Standard Time)
+                at Thu Jan 27 2022 13:35:01 GMT+0530 (India Standard Time)
             </div>
-        <script src="prettify.js"></script>
+        <script src="../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="sorter.js"></script>
-        <script src="block-navigation.js"></script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
     </body>
 </html>
     

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo Component 1`] = `
+<div
+  className="MuiBox-root css-70qvj9"
+>
+  <img
+    alt="not found"
+    className="MuiBox-root css-qc5z28"
+    src="/assets/logo.png"
+  />
+  <p
+    className="MuiTypography-root MuiTypography-body1 css-1vrfq90-MuiTypography-root"
+  >
+    Blinkist
+  </p>
+</div>
+`;
