@@ -1,14 +1,14 @@
 import MyLibrary from '../pages/MyLibrary/index';
 import EntrepreneurPage from '../pages/EntrepreneurPage';
-import Header from '../../Components/organisms/Header';
-import BookInfo from '../../Components/pages/BookInfoPage';
-import Footer from '../../Components/organisms/Footer';
+import Header from '../organisms/Header';
+import BookInfo from '../pages/BookInfoPage';
+import Footer from '../organisms/Footer';
 import {Box, Container} from '@mui/material';
-import Explore from '../../Components/organisms/Explorer';
+import Explore from '../organisms/Explorer';
 import {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import CircularProgress from '@mui/material/CircularProgress';
-import Blank from '../../Components/atoms/Blank';
+import Blank from '../atoms/Blank';
 
 const TemplateComponent = () => {
     const [exploreOption, setExploreOption] = useState<boolean>(false);
@@ -23,14 +23,14 @@ const TemplateComponent = () => {
     useEffect(() => {
         const processor = async () => {
             let response = await fetch('http://localhost:3000/extra');
-            let data = await response.json();
-            setData(data); 
+            let data1 = await response.json();
+            setData(data1); 
             response = await fetch('http://localhost:3000/library');
-            let library = await response.json();
-            setLibrary(library);
+            let library1 = await response.json();
+            setLibrary(library1);
             response = await fetch('http://localhost:3000/books');
-            let books = await response.json();
-            setBooks(books);
+            let books1 = await response.json();
+            setBooks(books1);
         };
         processor();
     }, []);

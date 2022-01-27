@@ -7,11 +7,8 @@ import Typography from '../../atoms/Typography';
 import ProgressBar from '../../atoms/ProgressBar';
 import Icon from '../../atoms/Icons';
 import AddIcon from '@mui/icons-material/Add';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import {NavLink,Link} from 'react-router-dom';
-import ButtonComponent from '../../atoms/Button';
+import {Link} from 'react-router-dom';
 import { useState } from 'react';
-import { makeStyles } from '@mui/styles';
 import theme from '../../../Themes/main'
 
 

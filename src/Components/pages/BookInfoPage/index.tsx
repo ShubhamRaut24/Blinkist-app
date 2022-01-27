@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import {Container, Box} from '@mui/material';
 import Typography from '../../atoms/Typography';
 import Icon from '../../atoms/Icons';
@@ -97,7 +98,7 @@ const BookInfoComponent = ({library, setLibrary}:any)=>{
     const checkInLibrary = ()=>{
         for(let curr of library.currentlyReading){
             console.log(curr.id,bookId)
-            if(curr.id === bookId){
+            if(curr.id == bookId){
                 setcurrentlyReadingStatus(true)
                 return;
             }
@@ -105,19 +106,19 @@ const BookInfoComponent = ({library, setLibrary}:any)=>{
         setcurrentlyReadingStatus(false);
     }
     useEffect(() =>{
-        const processor = async (bookId: any) => {
-            let response = await fetch(`http://localhost:3000/books/${bookId}`);
-            const bookData = await response.json();
-            setBookData(bookData);
+        const processor = async (bookId1: any) => {
+            let response = await fetch(`http://localhost:3000/books/${bookId1}`);
+            const bookData1 = await response.json();
+            setBookData(bookData1);
         }
         checkInLibrary();
         processor(bookId);
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     const libraryStatusHandler = async (event:any) => {
-        console.log("hello")
+       
         try{
-            let index = library.currentlyReading.findIndex((curr:any) => curr.id === bookId);
+            let index = library.currentlyReading.findIndex((curr:any) => curr.id == bookId);
             let currData = library.currentlyReading[index];
             library.currentlyReading.splice(index, 1);
             library.finishedBook.push({"id" : currData.id});
@@ -138,19 +139,20 @@ const BookInfoComponent = ({library, setLibrary}:any)=>{
     const moreInfo = ()=>{
         if(currState === tabData[0].value){
             return(
-                <Typography>
-                    {bookData.synopics}
+                <Typography sx={{color:'#03314B',fontWeight:'400',fontSize:'16px'}}>
+                    {/* {bookData.synopics} */}
+                    Beyond Entrepreneurship 2.0 (2020) updates Jim Collins and Bill Lazier’s essential 1992 business handbook, Beyond Entrepreneurship for the<br/> entrepreneurs, visionaries, and innovators of today. This new edition combines the timeless business advice and strategy of the original text,<br/> supplemented with cutting-edge insights and case studies pertinent to today’s business world.
                 </Typography>
             )
         }else if(currState === tabData[1].value){
             return(
-                <Typography>
+                <Typography  sx={{color:'#03314B',fontWeight:'400',fontSize:'16px'}}>
                     {bookData.for}  
                 </Typography>
             )
         }else if(currState === tabData[2].value){
             return(
-                <Typography>
+                <Typography sx={{color:'#03314B',fontWeight:'400',fontSize:'16px'}}>
                     {bookData.about_author}       
                 </Typography>
             )
@@ -198,7 +200,7 @@ const BookInfoComponent = ({library, setLibrary}:any)=>{
                         <Button children='Send to Kindle' size='medium' className={classes.forward} endIcon={<ArrowForward />}/>
                     </Box>
                 </Box>
-                <Box>
+                <Box sx={{marginRight:'200px'}}>
                     <Image height='300' width='280' src= {bookData.url}/>
                 </Box>
             </Box>

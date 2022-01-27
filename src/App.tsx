@@ -1,7 +1,7 @@
 import {ThemeProvider, CssBaseline} from '@mui/material';
 import React from 'react';
 import './App.css';
-import  Template  from './Components/Template/Template';
+import  Template  from './Components/Template/TemplateComponent';
 import theme from './Themes/main';
 
 

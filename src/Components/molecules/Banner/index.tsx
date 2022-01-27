@@ -1,6 +1,5 @@
 import Image from '../../atoms/Images/index';
 import Typography from '../../atoms/Typography/index';
-// import Bannerimage from "./BannerImg.png";
 import {Box,} from '@mui/material';
 
 

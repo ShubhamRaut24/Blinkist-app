@@ -59,27 +59,23 @@ const HeaderComponent = (props : any) => {
                                 props.setBlankStatus(true)
                             }} size='large' key={0} startIcon={<Search fontSize='large' style={{textDecoration: 'none', fontSize: '30px'}}/>} sx={{color:'#03314B', margin: '0px 5px 0px 40px'}}/>
 
-                            {/* <NavLink to='/' style={{ textDecoration: 'none' }}> */}
-                            {/* onMouseLeave={props.handleExploreMenu} */}
+                            
                             <Button onClick={props.handleExploreMenu}  size='medium' key={1} sx={{display: 'flex', alignItems: 'center', color:'#03314B', margin: '5px 10px' ,fontSize:'16px',fontWeight:'500'}} children='Explore' endIcon={!props.exploreOption ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />} />
-                            {/* </NavLink> */}
+                           
                             <NavLink to='/' style={{ textDecoration: 'none', }}>
                                 <Button size='medium' key={2} children='My Library' sx={{color:'#03314B', margin: '5px 10px' ,fontSize:'16px',fontWeight:'500'}}/>
                             </NavLink>
                         </Box>
                     }
                     <Box sx={{ flexGrow: 0.5,}}>
-                        {/* <Tooltip title="Open settings"> */}
+                       
                         <div style={{alignItems: 'center',display:'flex'}}>
                         <Button onClick={handleOpenUserMenu}>
                         <AvatarComp/>
                         </Button>
                         <Icon icon={<KeyboardArrowDownIcon />}/>
                         </div>
-                        {/* <Icon icon={<KeyboardArrowDownIcon />}/> */}
-                        {/* <Button onClick={handleOpenUserMenu} size='medium' key={1} sx={{display: 'flex', alignItems: 'center', color:'black', margin: '5px 10px'}} children='Account' endIcon={anchorElUser ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />} /> */}
-                            {/* <Image src='/assets/book.png' height={50} onClick={handleOpenUserMenu} sx={{ p: 0, borderRadius: '50%' }} /> */}
-                        {/* </Tooltip> */}
+                        
                         <Menu
                             sx={{ mt: '45px' }}
                             id="menu-appbar"
@@ -113,52 +109,3 @@ export default HeaderComponent;
 
 
 
-//  {/* <Tooltip title="Open settings"> */}
-//  <div style={{alignItems: 'center',display:'flex'}}>
-//  <AvatarComp/>
-//  <Icon icon={<KeyboardArrowDownIcon />}/>
-//  </div>
-// {/* </Tooltip> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// eslint-disable-next-line no-lone-blocks
-{/* <Menu
-                            sx={{ mt: '45px' }}
-                            id="menu-appbar"
-                            anchorEl={anchorElUser}
-                            anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            open={Boolean(anchorElUser)}
-                            onClose={handleCloseUserMenu}
-                        >
-                        {settings.map((setting) => (
-                            <MenuItem key={setting} onClick={handleCloseNavMenu}>
-                            <Typography textAlign="center">{setting}</Typography>
-                            </MenuItem>
-                        ))}
-                        </Menu> */}

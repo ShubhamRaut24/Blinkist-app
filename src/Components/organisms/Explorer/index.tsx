@@ -1,8 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import {Container, Box} from '@mui/material';
-// import Tab from '../../molecules/tabs';
 import Typography from '../../atoms/Typography';
-// import {Link} from 'react-router-dom';
 import {useState} from 'react';
 import NavIcon from '../../molecules/NavIcon';
 import theme from '../../../Themes/main'
