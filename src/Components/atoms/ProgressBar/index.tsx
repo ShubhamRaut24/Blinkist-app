@@ -8,11 +8,9 @@ const barStyled =
   backgroundColor: '#DFE8F6'
 }
 
-const ProgressBarComponent = ({value = 0, theme, ...props}:any) => {
+const ProgressBarComponent = ({value = 0, ...props}:any) => {
     return (
-       
             <LinearProgress value={value} {...props} sx={barStyled} variant="determinate" />
-      
     )
 }
 

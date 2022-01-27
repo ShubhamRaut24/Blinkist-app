@@ -16,4 +16,3 @@ const TypographyComponents = (props:any) => {
 
 export default TypographyComponents;
 
-// mt={2}  sx={{display: 'flex', justifyContent: 'flex-start'}}

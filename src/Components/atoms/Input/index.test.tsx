@@ -1,9 +1,22 @@
+import React from 'react';
+import InputComponent from ".";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import renderer from 'react-test-renderer';
+import {Search} from '@mui/icons-material';
 
-import { render, screen } from '@testing-library/react';
-import InputComponent from '.';
+const theme = createTheme({
+    palette: {
+      success:{
+        main: '#eb3464',
+      }
+    }
+});
 
-test('renders Input Component', () => {
-  render(<InputComponent />);
-  const inputElement = screen.getByRole('textbox');
-  expect(inputElement).toBeInTheDocument();
+test('Input Component', () => {
+    const component = renderer.create(
+        <ThemeProvider theme={theme}>
+            <InputComponent startIcon={<Search/>}></InputComponent>
+       </ThemeProvider>
+    );
+    expect(component).toMatchSnapshot();
 });
