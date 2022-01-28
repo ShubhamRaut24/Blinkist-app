@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookCardcomponent 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-rgjzgo-MuiPaper-root"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "borderRadius": "8px",
+      "margin": "16px 16px 16px",
+    }
+  }
+>
+  <a
+    href="/book-info/1"
+    onClick={[Function]}
+  >
+    <img
+      alt="not found"
+      className="MuiBox-root css-71emdi"
+      src="/assets/book.png"
+      style={
+        Object {
+          "borderRadius": "8px 8px 0 0",
+        }
+      }
+    />
+  </a>
+  <div
+    className="MuiBox-root css-cxmp86"
+    style={
+      Object {
+        "padding": "12px",
+      }
+    }
+  >
+    <h6
+      className="MuiTypography-root MuiTypography-subtitle1 css-406oln-MuiTypography-root"
+      style={
+        Object {
+          "fontSize": "18px",
+          "fontWeight": "bold",
+        }
+      }
+      variant1="subtitle1"
+    >
+      Being Boss
+    </h6>
+    <p
+      className="MuiTypography-root MuiTypography-body1 css-6aw2hg-MuiTypography-root"
+      variant1="body1"
+    >
+      Kathleen Shannon and Emily...
+    </p>
+    <div
+      className="MuiBox-root css-8owaep"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+        }
+      }
+    >
+      <div
+        className="MuiBox-root css-old1by"
+        data-testid="icon"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="AccessTimeIcon"
+          focusable="false"
+          style={
+            Object {
+              "color": "#6D787E",
+              "fontSize": "20px",
+              "marginTop": "4px",
+            }
+          }
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+          />
+          <path
+            d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+          />
+        </svg>
+      </div>
+      <span
+        className="MuiTypography-root MuiTypography-caption2 css-1fo51um-MuiTypography-root"
+        variant1="caption2"
+      >
+        13-minute read
+      </span>
+    </div>
+    <div
+      className="MuiBox-root css-ckyhk3"
+    >
+      
+    </div>
+  </div>
+  <div
+    className="MuiBox-root css-79elbk"
+  >
+    <div
+      className="MuiBox-root css-1ah5qgj"
+      onClick={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "borderRadius": "0 0 8px 8px",
+          "borderTop": "1px solid lightGrey",
+          "display": "flex",
+          "height": "48px",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="MuiBox-root css-old1by"
+        data-testid="icon"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="AddIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+          />
+        </svg>
+      </div>
+      <p
+        className="MuiTypography-root MuiTypography-body1 css-t5ymw4-MuiTypography-root"
+        variant1="body1"
+      >
+        Add to library
+      </p>
+    </div>
+  </div>
+</div>
+`;
