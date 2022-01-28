@@ -202,7 +202,7 @@ const ExploreComponent = ()=>{
                     {data.map((currData)=>{
                         return <Box className={classes.nav}>
                            <NavLink to='/EntrepreneurPage' style={{textDecoration: 'none',color:'#6D787E' }} >
-                            <NavIcon {...currData}  />
+                            <NavIcon {...currData} data-testid='nav-icon'  />
                             </NavLink>
                             </Box>
                     })}

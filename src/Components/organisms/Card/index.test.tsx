@@ -11,9 +11,11 @@ const props = {
     timeRead: "13-minute read",
     width: 280,
     inLibrary: false,
+    libraryHandler:false,
+    cardId:1
 };
 
-test('BookCard', () => {
+test('BookCard component', () => {
     const component = renderer.create(
         <BrowserRouter>
             <BookCard {...props}></BookCard>

@@ -11,7 +11,7 @@ test('it render the nav icon as well as label', () => {
 });
 
 
-test('render Left icon', () => {
+test('it render Left icon', () => {
     render(<NavIconComponent label='blinkist' leftIcon={<AddIcon data-testid='left-icon'/>}/>);
     const linkElement = screen.getByTestId('left-icon')
     expect(linkElement).toBeInTheDocument();

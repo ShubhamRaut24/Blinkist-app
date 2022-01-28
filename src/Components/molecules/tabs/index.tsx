@@ -26,7 +26,7 @@ export default function TabsWrappedLabel({tabData, ...props}: any) {
         {
           tabData.map((currTab:any) => {
             return (
-              <Tab value={currTab.value} label={currTab.label}   sx={{fontWeight: '700', textTransform: 'unset',fontSize:'18px',fontFamily:'Cera Pro',marginRight:'150px'}}/>
+              <Tab value={currTab.value} label={currTab.label} data-testid='tab'   sx={{fontWeight: '700', textTransform: 'unset',fontSize:'18px',fontFamily:'Cera Pro',marginRight:'150px'}}/>
             );
           })
         }

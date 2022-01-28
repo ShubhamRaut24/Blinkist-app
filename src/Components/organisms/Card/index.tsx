@@ -55,7 +55,7 @@ const styles={
 
 }
 
-const CardComponent = ({imgHeight, url, bookName, writerName, timeRead = "0-minute read", progress, width, inLibrary, libraryHandler, ...props}: any) => {
+const CardComponent = ({imgHeight, url, bookName, writerName, timeRead = "0-minute read", progress, width, inLibrary, libraryHandler,cardId}: any) => {
     const [hoverState, setHoverState] = useState(false);
     const [bookLibraryStatus, setBookLibraryStatus] = useState(inLibrary);
     const  hoverStateHandler = ()=>{
@@ -67,7 +67,7 @@ const CardComponent = ({imgHeight, url, bookName, writerName, timeRead = "0-minu
                 backgroundColor: `${!inLibrary && hoverState ? theme.palette.primary.light : 'white'}`
             }}
             onMouseEnter={hoverStateHandler} onMouseLeave={hoverStateHandler} style={styles.parent}>
-            <Link to={`/book-info/${props.cardId}`}>
+            <Link to={`/book-info/${cardId}`}>
                 <Image  height={imgHeight} width={width} alt="blinkist" component="img"  src={url} style={styles.image}/>
             </Link>
             <Box sx={{
@@ -97,7 +97,7 @@ const CardComponent = ({imgHeight, url, bookName, writerName, timeRead = "0-minu
                     <ProgressBar width={100} value={progress} color='primary'/> 
                     :
                     <Box onClick={e => 
-                        libraryHandler(props.cardId, setBookLibraryStatus)
+                        libraryHandler(cardId, setBookLibraryStatus)
                     } 
                     sx={{
                         color: `${!hoverState ? '#0365F2' : 'white'}`,

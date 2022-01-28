@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1643311559290" clover="3.2.0">
-  <project timestamp="1643311559290" name="All files">
-    <metrics statements="42" coveredstatements="39" conditionals="24" coveredconditionals="16" methods="20" coveredmethods="17" elements="86" coveredelements="72" complexity="0" loc="42" ncloc="42" packages="16" files="16" classes="16"/>
+<coverage generated="1643366757412" clover="3.2.0">
+  <project timestamp="1643366757412" name="All files">
+    <metrics statements="71" coveredstatements="65" conditionals="37" coveredconditionals="27" methods="31" coveredmethods="26" elements="139" coveredelements="118" complexity="0" loc="71" ncloc="71" packages="19" files="19" classes="19"/>
     <package name="src">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.tsx" path="E:\React\blinkist\src\App.tsx">
@@ -51,9 +51,9 @@
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="E:\React\blinkist\src\Components\atoms\Input\index.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.atoms.ProgressBar">
@@ -69,8 +69,8 @@
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="E:\React\blinkist\src\Components\atoms\Typography\index.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="7" count="8" type="stmt"/>
-        <line num="8" count="33" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="182" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.molecules.Banner">
@@ -101,11 +101,42 @@
       <metrics statements="5" coveredstatements="4" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="1"/>
       <file name="index.tsx" path="E:\React\blinkist\src\Components\molecules\NavIcon\index.tsx">
         <metrics statements="5" coveredstatements="4" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="1"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="133" type="stmt"/>
+        <line num="7" count="133" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
+        <line num="10" count="133" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Components.molecules.Search">
+      <metrics statements="13" coveredstatements="13" conditionals="7" coveredconditionals="7" methods="5" coveredmethods="5"/>
+      <file name="index.tsx" path="E:\React\blinkist\src\Components\molecules\Search\index.tsx">
+        <metrics statements="13" coveredstatements="13" conditionals="7" coveredconditionals="7" methods="5" coveredmethods="5"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
+        <line num="15" count="94" type="cond" truecount="5" falsecount="0"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Components.molecules.tabs">
+      <metrics statements="6" coveredstatements="4" conditionals="6" coveredconditionals="4" methods="3" coveredmethods="2"/>
+      <file name="index.tsx" path="E:\React\blinkist\src\Components\molecules\tabs\index.tsx">
+        <metrics statements="6" coveredstatements="4" conditionals="6" coveredconditionals="4" methods="3" coveredmethods="2"/>
+        <line num="9" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.organisms.Card">
@@ -120,6 +151,22 @@
         <line num="62" count="0" type="stmt"/>
         <line num="64" count="1" type="stmt"/>
         <line num="100" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Components.organisms.Explorer">
+      <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <file name="index.tsx" path="E:\React\blinkist\src\Components\organisms\Explorer\index.tsx">
+        <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="54" count="6" type="stmt"/>
+        <line num="55" count="5" type="stmt"/>
+        <line num="70" count="5" type="stmt"/>
+        <line num="71" count="5" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="75" count="5" type="stmt"/>
+        <line num="182" count="5" type="stmt"/>
+        <line num="203" count="130" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.organisms.Footer">
@@ -137,7 +184,7 @@
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="theme.tsx" path="E:\React\blinkist\src\Themes\theme.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="5" count="9" type="stmt"/>
+        <line num="5" count="11" type="stmt"/>
       </file>
     </package>
   </project>

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BookCard 1`] = `
+exports[`BookCard component 1`] = `
 <div
   className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-rgjzgo-MuiPaper-root"
   onMouseEnter={[Function]}
@@ -13,7 +13,7 @@ exports[`BookCard 1`] = `
   }
 >
   <a
-    href="/book-info/undefined"
+    href="/book-info/1"
     onClick={[Function]}
   >
     <img

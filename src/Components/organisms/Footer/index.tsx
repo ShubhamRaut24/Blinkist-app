@@ -44,8 +44,8 @@ const FooterComponent = (props:any)=>{
           marginTop: '24px'}} >
           <Container sx={{display: 'flex', justifyContent:'start'}} >
             <Box sx={{marginRight:'150px'}}>
-                <Logo height= {32} width={32} url= '/assets/logo.png' name= 'Blinkist'/>
-                <Typography variant="h6" sx={{fontWeight: 'bold', color: '#0365F2',fontSize:'24px'}}>
+                <Logo height= {32} width={32} url= '/assets/logo.png' name= 'Blinkist' data-testid='logo'/>
+                <Typography variant="h6" sx={{fontWeight: 'bold', color: '#0365F2',fontSize:'24px'}} data-testid='slogan'>
                     Big ideas in small packages<br/>
                     Start learning now
                 </Typography>
@@ -55,7 +55,7 @@ const FooterComponent = (props:any)=>{
                     data.map(curr => {
                         return (<Box sx={{
                             margin: '0px 32px'
-                        }}>
+                        }} data-testid='topics'>
                             <Typography pb={2} sx={{fontWeight: 'bold',display:'flex',justifyContent:'start',color:'#03314B',fontSize:'17px'}}>
                                 {curr.heading}
                             </Typography>

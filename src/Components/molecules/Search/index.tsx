@@ -27,7 +27,7 @@ const SearchComponent = (props: any) => {
         )
     }
     return (
-        <Box sx={{width: '500px', position: 'relative'}}>
+        <Box sx={{width: '500px', position: 'relative'}} data-testid='search-box'>
             <Input sx={{
                    margin: '30px 0px',
                    height: '46px',
@@ -47,6 +47,7 @@ const SearchComponent = (props: any) => {
                 <ListItem
                 key={value.id}
                     sx={{display: 'flex'}}
+                    data-testid='result'
                 >
                 <Typography sx={{fontWeight: 'bold'}}>
                     {value.name}
