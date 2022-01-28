@@ -10,15 +10,14 @@ function renderExplore() {
     );
   }
 
-  describe("Explore", () => {
-
-    test('it render Explore by category heading', () => {
+describe("Explore", () => {
+    test('render Explore by category heading', () => {
         renderExplore();
         const linkElement = screen.getByText('Explore by category')
         expect(linkElement).toBeInTheDocument();
     });
 
-    test('it should recently added text to be clickable', () => {
+    test("should recently added text to be clickable", () => {
         renderExplore();
         const ButtonElement = screen.getByText(/See recently added titles/);
         fireEvent.click(ButtonElement);
@@ -30,9 +29,9 @@ function renderExplore() {
         fireEvent.click(ButtonElement);
         expect(window.location.pathname).toBe("/");
     });
-    test("Explore by category text should be blue", () => {
+    test("it Explore by category text should be blue", () => {
         renderExplore();
-        const linkElement = screen.getByText(/Explore by category/)
+        const linkElement = screen.getByText('Explore by category')
         expect(linkElement).toHaveStyle("color: #116BE9");
     });
     test("Nav Icon count should be 26", () => {

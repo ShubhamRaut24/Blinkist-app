@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders App Component 1`] = `
+exports[`render App Component 1`] = `
 <div
   className="App"
+  data-testid="App1"
 >
   <div
     className="MuiContainer-root MuiContainer-maxWidthLg css-14uxf7f-MuiContainer-root"

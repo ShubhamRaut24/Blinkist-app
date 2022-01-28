@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-, "../Typescript/index.tsx"  ]
+, "../Typescript/index.tsx", "../Typescript/index.test.tsx"  ]
 }

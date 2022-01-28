@@ -12,7 +12,7 @@ import theme from './Themes/main';
 
 function App() {
   return (
-    <div className="App">
+    <div data-testid="App1" className="App">
       <ThemeProvider theme={theme}>
       <CssBaseline />
       <Template />

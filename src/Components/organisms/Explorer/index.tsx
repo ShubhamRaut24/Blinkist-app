@@ -1,19 +1,28 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import {Container, Box} from '@mui/material';
 import Typography from '../../atoms/Typography';
-import {useState} from 'react';
 import NavIcon from '../../molecules/NavIcon';
 import theme from '../../../Themes/main'
-import { makeStyles } from '@mui/styles';
+import { makeStyles as makeStyle } from '@mui/styles';
 import {RocketLaunchOutlined, AccountBalanceOutlined ,
      DesktopWindowsOutlined, ScienceOutlined,
      StairsOutlined, HistoryToggleOffOutlined,
      AttachMoneyOutlined, SpaOutlined, ConnectWithoutContactOutlined, ApartmentOutlined, AccessibleForwardOutlined, BorderColorOutlined, CakeOutlined, CategoryOutlined, FamilyRestroomOutlined, LibraryBooksOutlined, LocalAtmOutlined, ManageAccountsOutlined, ParkOutlined, PeopleAltOutlined, PrecisionManufacturingOutlined, PsychologyOutlined, SchoolOutlined, SelfImprovementOutlined, TimerOutlined, WcOutlined}
       from '@mui/icons-material';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((themes)=>({
+    [themes.breakpoints.down('sm')]: {
+        topic: {
+            fontSize: '14px',
+            width: '100vw',
+        }
+    },
+}));
 
 
-const useStyles = makeStyles({
+const useStyle = makeStyle({
     root: {
         backgroundColor: theme.palette.backgroundcolor.main,
         height: 'auto',
@@ -47,30 +56,9 @@ const useStyles = makeStyles({
     }
 })
 
-
 const ExploreComponent = ()=>{
-
-    
-    const classes = useStyles();
-    const tabData = [
-        { 
-          'value': 'category',
-          'label': 'Explore by category',
-        },
-        { 
-          'value': 'recent',
-          'label': 'See recently added titles'
-        },
-        { 
-            'value': 'popular',
-            'label': 'See popular titles'
-          }
-    ]
-   
-    const [currState, setCurrState] = useState(tabData[0].value);
-    const handleState = (state:string) => {
-        setCurrState(state);
-    }
+    const classes = useStyle();
+    const allClass = useStyles();
     
     const data =[
         {
@@ -181,22 +169,16 @@ const ExploreComponent = ()=>{
 
     return (
         <Box className={classes.root} sx={{width:'1440px',height:'398px'}}>
-                <Container className={classes.container}>
-                <Link to='/' style={{textDecoration: 'none', color:'#6D787E'}}>
+                <Container className={`${classes.container} ${allClass.container}`}>
                     <Typography  variant1='subtitle3' sx={{color: '#116BE9', fontWeight: 'bold'}} mr={12}>
                         Explore by category
                     </Typography>
-                </Link>
-                    <Link to='/' style={{textDecoration: 'none', color:'#6D787E'}}>
-                        <Typography variant1='subtitle3' mr={12} className={classes.topicText}>
+                        <Typography variant1='subtitle3' mr={12}  className={`${classes.topicText} ${allClass.topic}`}>
                             See recently added titles
                         </Typography>
-                    </Link>
-                    <Link to='/' style={{textDecoration: 'none', color:'#6D787E'}}>
-                        <Typography className={classes.topicText} variant1='subtitle3' mr={12}>
+                        <Typography className={`${classes.topicText} ${allClass.topic}`} variant1='subtitle3' mr={12}>
                             See popular titles
                         </Typography>
-                    </Link>
                 </Container>
                 <Container className={classes.navs}>
                     {data.map((currData)=>{
@@ -210,5 +192,4 @@ const ExploreComponent = ()=>{
         </Box>
     )
 }
-
 export default ExploreComponent

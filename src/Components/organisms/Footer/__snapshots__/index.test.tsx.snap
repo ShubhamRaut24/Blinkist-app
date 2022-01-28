@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer 1`] = `
+exports[`Footers 1`] = `
 <div
   className="MuiBox-root css-1sp4l3i"
 >
@@ -19,13 +19,13 @@ exports[`Footer 1`] = `
           src="/assets/logo.png"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 css-1vrfq90-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-cl9qd7-MuiTypography-root"
         >
           Blinkist
         </p>
       </div>
       <h6
-        className="MuiTypography-root MuiTypography-h6 css-1e9lyz8-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-h6 css-1dzacpr-MuiTypography-root"
         data-testid="slogan"
       >
         Big ideas in small packages
@@ -41,27 +41,27 @@ exports[`Footer 1`] = `
         data-testid="topics"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 css-juep0h-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-ohx2p-MuiTypography-root"
         >
           Editorial
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           Book lists
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           What is Notfication?
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           What to read next?
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           Benefits of reading
         </p>
@@ -71,27 +71,27 @@ exports[`Footer 1`] = `
         data-testid="topics"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 css-juep0h-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-ohx2p-MuiTypography-root"
         >
           Useful links
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           Pricing
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           Blinkist business
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           Gift cards
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           Blinkist magaine
         </p>
@@ -101,27 +101,27 @@ exports[`Footer 1`] = `
         data-testid="topics"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 css-juep0h-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-ohx2p-MuiTypography-root"
         >
           Company
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           About
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           Carrer
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           partners
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-5pdmqr-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-e3ldce-MuiTypography-root"
         >
           Code of Conduct
         </p>

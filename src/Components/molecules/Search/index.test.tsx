@@ -17,7 +17,7 @@ test('should render input box', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test('should render filtered result of length 2 for Employee search',  async () => {
+test('it should render filtered result of length 2 for Employee search',  async () => {
     let response = await fetch('http://localhost:3000/books');
     let books = await response.json();
     render(SearchComponent(books));

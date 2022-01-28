@@ -4,8 +4,19 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import tabTheme from '../../../Themes/tabsTheme';
 import { ThemeProvider } from '@mui/material/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles((themes) => ({
+  [themes.breakpoints.down('sm')]: {
+      tab: {
+          fontSize: '13px',
+          width: '140px'
+      }
+  },
+}));
 export default function TabsWrappedLabel({tabData, ...props}: any) {
+
+  const classes = useStyles();
   const [value, setValue] = React.useState(tabData && tabData[0].value);
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
@@ -13,20 +24,25 @@ export default function TabsWrappedLabel({tabData, ...props}: any) {
   };
 
   return (
-    <Box sx={{ borderBottom: 2, borderColor: 'divider', width:'912px' }}>
+    <Box sx={{ borderBottom: 1, borderColor: 'divider', width:'912px' }}>
     <ThemeProvider theme={tabTheme}>
       <Tabs
         value={value}
         onChange={handleChange}
         aria-label="wrapped label tabs example"
         autoCapitalize="none"
-        textColor={props.textColor ? props.textColor : "secondary"}
-        indicatorColor={props.indicatorColor ? props.indicatorColor : "secondary"}
+        indicatorColor= "secondary"
+        data-testid='tabs'
       >
         {
           tabData.map((currTab:any) => {
             return (
-              <Tab value={currTab.value} label={currTab.label} data-testid='tab'   sx={{fontWeight: '700', textTransform: 'unset',fontSize:'18px',fontFamily:'Cera Pro',marginRight:'150px'}}/>
+              <Tab 
+              value={currTab.value} 
+              label={currTab.label} 
+              data-testid={`tab-${currTab.value}`}   
+              sx={{fontWeight: '700', textTransform: 'unset',fontSize:'18px',fontFamily:'Cera Pro',marginRight:'150px',width: '200px', borderBottom: '2px solid #E1ECFC', alignItems: 'start'}}
+              className={classes.tab}/>
             );
           })
         }
