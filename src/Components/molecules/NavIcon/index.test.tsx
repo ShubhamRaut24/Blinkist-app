@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import NavIcon from '.';
 import AddIcon from '@mui/icons-material/Add';
-test('it render the nav icon as well as label', () => {
+test('render the nav icon as well as label', () => {
   render(<NavIcon label='blinkist' leftIcon={<AddIcon />}/>);
   const linkElement = screen.getByTestId('nav-icon')
   expect(linkElement.textContent).toBe('blinkist');

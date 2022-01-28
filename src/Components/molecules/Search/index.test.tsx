@@ -11,7 +11,7 @@ const SearchComponent = (books:any)=>{
     )
 }
 
-test('it should render input box', () => {
+test('should render input box', () => {
   render(<Search />);
   const linkElement = screen.getByPlaceholderText('Search by title or author');
   expect(linkElement).toBeInTheDocument();

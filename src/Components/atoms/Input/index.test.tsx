@@ -22,7 +22,7 @@ test('Input Components', () => {
     expect(component).toMatchSnapshot();
 });
 
-test('it should render input element', () => {
+test('should render input element', () => {
   render(<InputComponent placeholder="Search by title or author"/>);
   const inputElement = screen.getByPlaceholderText(/Search by title or author/);
   expect(inputElement).toBeInTheDocument();

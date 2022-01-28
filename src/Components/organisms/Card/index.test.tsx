@@ -15,7 +15,7 @@ const props = {
     cardId:1
 };
 
-test('BookCardcomponent', () => {
+test('Book Card component', () => {
     const component = renderer.create(
         <BrowserRouter>
             <BookCard {...props}></BookCard>

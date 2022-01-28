@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import Banner1 from ".";
 
 
-test('Banner a Heading', () => {
+test('Banner  Heading', () => {
     render(<Banner1 />);
     const Element = screen.getByTestId('banner11');
     expect(Element).toBeInTheDocument();

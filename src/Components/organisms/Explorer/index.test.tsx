@@ -23,7 +23,7 @@ describe("Explore", () => {
         fireEvent.click(ButtonElement);
         expect(window.location.pathname).toBe("/");
     });
-    test("it should See popular titles to be clickable", () => {
+    test("should See popular titles to be clickable", () => {
         renderExplore();
         const ButtonElement = screen.getByText(/See popular titles/);
         fireEvent.click(ButtonElement);
