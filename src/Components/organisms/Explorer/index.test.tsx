@@ -17,19 +17,19 @@ describe("Explore", () => {
         expect(linkElement).toBeInTheDocument();
     });
 
-    test("should recently added text to be clickable", () => {
+    test("it should recently added text to be clickable", () => {
         renderExplore();
         const ButtonElement = screen.getByText(/See recently added titles/);
         fireEvent.click(ButtonElement);
         expect(window.location.pathname).toBe("/");
     });
-    test("should See popular titles to be clickable", () => {
+    test("it should See popular titles to be clickable", () => {
         renderExplore();
         const ButtonElement = screen.getByText(/See popular titles/);
         fireEvent.click(ButtonElement);
         expect(window.location.pathname).toBe("/");
     });
-    test("it Explore by category text should be blue", () => {
+    test("Explore by category text should be blue", () => {
         renderExplore();
         const linkElement = screen.getByText('Explore by category')
         expect(linkElement).toHaveStyle("color: #116BE9");

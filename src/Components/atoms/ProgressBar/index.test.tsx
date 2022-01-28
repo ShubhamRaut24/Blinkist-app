@@ -3,7 +3,7 @@ import ProgressBar from ".";
 import {render, screen } from '@testing-library/react';
 
 
-test('it should render progressbar', () => {
+test('should render progressbar', () => {
   render(<ProgressBar value={60}/>);
   const progressBarElement = screen.getByRole('progressbar');;
   expect(progressBarElement).toBeInTheDocument();

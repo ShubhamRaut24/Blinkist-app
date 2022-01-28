@@ -14,7 +14,7 @@ const tabData = [
 ]
 
 
-test('it should render 2 tabw for 2 length data', () => {
+test('should render 2 tabw for 2 length data', () => {
   render(<Tabs tabData={tabData}/>);
   const tabsElement = screen.getAllByTestId(/tab-/);
   expect(tabsElement.length).toBe(2);
