@@ -16,10 +16,6 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import SearchBox from '../../molecules/Search';
 
 
-
-
-
-
 const HeaderComponent = (props : any) => {
 
     const settings = ['Profile', 'Logout'];
@@ -39,7 +35,7 @@ const HeaderComponent = (props : any) => {
         setAnchorElUser(null);
     };
     return (
-        <AppBar position="fixed" sx={{color: 'black', backgroundColor: 'white', boxShadow: 'none', display:'flex',justifyContent:'start'}}>
+        <AppBar data-testid='box' position="fixed" sx={{color: 'black', backgroundColor: 'white', boxShadow: 'none', display:'flex',justifyContent:'start'}}>
             <Container>
                 <Toolbar sx={{height: '86px',  display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
                 <NavLink to='/' style={{ textDecoration: 'none' }}>
@@ -51,16 +47,16 @@ const HeaderComponent = (props : any) => {
                         <SearchBox books={props.books} searchStateHandler={() =>{
                             setSearchState(false)
                             props.setBlankStatus(false)
-                         } } /> 
+                         } } data-testid='search-box' /> 
                         :
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                            <Button onClick={() => {
+                            <Button data-testid='search-state-button' onClick={() => {
                                 setSearchState(true)
                                 props.setBlankStatus(true)
                             }} size='large' key={0} startIcon={<Search fontSize='large' style={{textDecoration: 'none', fontSize: '30px'}}/>} sx={{color:'#03314B', margin: '0px 5px 0px 40px'}}/>
 
                             
-                            <Button data-testid="explorebutton" onClick={props.handleExploreMenu}  size='medium' key={1} sx={{display: 'flex', alignItems: 'center', color:'#03314B', margin: '5px 10px' ,fontSize:'16px',fontWeight:'500'}} children='Explore' endIcon={!props.exploreOption ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />} />
+                            <Button data-testid='handle-explore' onClick={props.handleExploreMenu}  size='medium' key={1} sx={{display: 'flex', alignItems: 'center', color:'#03314B', margin: '5px 10px' ,fontSize:'16px',fontWeight:'500'}} children='Explore' endIcon={!props.exploreOption ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />} />
                            
                             <NavLink to='/' style={{ textDecoration: 'none', }}>
                                 <Button size='medium' key={2} children='My Library' sx={{color:'#03314B', margin: '5px 10px' ,fontSize:'16px',fontWeight:'500'}}/>

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render App Component 1`] = `
+exports[`render the App Component 1`] = `
 <div
   className="App"
   data-testid="App1"
@@ -10,6 +10,7 @@ exports[`render App Component 1`] = `
   >
     <span
       className="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1gi5zzc-MuiCircularProgress-root"
+      data-testid="circular-progress"
       role="progressbar"
       style={
         Object {

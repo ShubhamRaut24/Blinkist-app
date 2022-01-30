@@ -17,13 +17,13 @@ describe("Explore", () => {
         expect(linkElement).toBeInTheDocument();
     });
 
-    test("it should recently added text to be clickable", () => {
+    test("should recently added text to be clickable", () => {
         renderExplore();
         const ButtonElement = screen.getByText(/See recently added titles/);
         fireEvent.click(ButtonElement);
         expect(window.location.pathname).toBe("/");
     });
-    test("should See popular titles to be clickable", () => {
+    test("it should See popular titles to be clickable", () => {
         renderExplore();
         const ButtonElement = screen.getByText(/See popular titles/);
         fireEvent.click(ButtonElement);

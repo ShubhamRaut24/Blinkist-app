@@ -1,65 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="E:\React\blinkist\src\Components\atoms\Input\index.test.tsx">
-    <testCase name="Input Components" duration="101"/>
-    <testCase name="should render input element" duration="60"/>
-    <testCase name="should be able to type in input" duration="38"/>
+  <file path="E:\React\blinkist\src\Components\organisms\Card\index.test.tsx">
+    <testCase name="it should render same bookname text" duration="165"/>
+    <testCase name="should render same writer name text" duration="46"/>
+    <testCase name="should render same time read text" duration="38"/>
+    <testCase name="should render white background color if inLibrary is true" duration="126"/>
+    <testCase name="should render different color of card body when inLibrary is false as well as in hoveredState" duration="83"/>
+    <testCase name="should render different color od card box when inLibrary is false as well as in hoveredState" duration="48"/>
+    <testCase name="should card-library-handler be clickable and when inLIbrary is false" duration="59"/>
   </file>
-  <file path="E:\React\blinkist\src\Components\molecules\Search\index.test.tsx">
-    <testCase name="should render input box" duration="170"/>
-    <testCase name="it should render filtered result of length 2 for Employee search" duration="320"/>
-  </file>
-  <file path="E:\React\blinkist\src\App.test.tsx">
-    <testCase name="render App Component" duration="118"/>
+  <file path="E:\React\blinkist\src\Components\organisms\Header\index.test.tsx">
+    <testCase name="Header it search-state-button button should be clickable" duration="440"/>
   </file>
   <file path="E:\React\blinkist\src\Components\organisms\Explorer\index.test.tsx">
-    <testCase name="Explore render Explore by category heading" duration="383"/>
-    <testCase name="Explore it should recently added text to be clickable" duration="172"/>
-    <testCase name="Explore should See popular titles to be clickable" duration="158"/>
-    <testCase name="Explore Explore by category text should be blue" duration="185"/>
-    <testCase name="Explore Nav Icon count should be 26" duration="173"/>
+    <testCase name="Explore render Explore by category heading" duration="443"/>
+    <testCase name="Explore should recently added text to be clickable" duration="190"/>
+    <testCase name="Explore it should See popular titles to be clickable" duration="135"/>
+    <testCase name="Explore Explore by category text should be blue" duration="149"/>
+    <testCase name="Explore Nav Icon count should be 26" duration="156"/>
   </file>
-  <file path="E:\React\blinkist\src\Components\molecules\Logo\index.test.tsx">
-    <testCase name="it should render Logo" duration="66"/>
+  <file path="E:\React\blinkist\src\Components\pages\EntrepreneurPage\index.test.tsx">
+    <testCase name="Home it should render input" duration="569"/>
+    <testCase name="Home should render containers matching to data length" duration="237"/>
+    <testCase name="Home should render a circularbox if library is empty" duration="71"/>
+    <testCase name="Home clickable library handler" duration="271"/>
   </file>
-  <file path="E:\React\blinkist\src\Components\atoms\ProgressBar\index.test.tsx">
-    <testCase name="it should render progressbar" duration="136"/>
-    <testCase name="should render progressbar with value" duration="30"/>
+  <file path="E:\React\blinkist\src\Components\molecules\Search\index.test.tsx">
+    <testCase name="it should render input box" duration="127"/>
+    <testCase name="it should render filtered result of length 2 for Employee search" duration="284"/>
   </file>
-  <file path="E:\React\blinkist\src\Components\molecules\Banner1\index.test.tsx">
-    <testCase name="Banner  Heading" duration="118"/>
+  <file path="E:\React\blinkist\src\Components\atoms\Input\index.test.tsx">
+    <testCase name="Input Components" duration="68"/>
+    <testCase name="it should render input element" duration="54"/>
+    <testCase name="should be able to type in input" duration="22"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\pages\BookInfoPage\index.test.tsx">
+    <testCase name="it is Book Info should render circular bar if data is empty" duration="131"/>
+    <testCase name="it is Book Info should not render circular bar if data is not empty" duration="2039"/>
+    <testCase name="it is Book Info should render tabs with clickable option" duration="2129"/>
+    <testCase name="it is Book Info should render third tab with clickable option" duration="2096"/>
+  </file>
+  <file path="E:\React\blinkist\src\App.test.tsx">
+    <testCase name="render the App Component" duration="99"/>
   </file>
   <file path="E:\React\blinkist\src\Components\atoms\Button\index.test.tsx">
-    <testCase name="renders  Button" duration="239"/>
+    <testCase name="it renders Button" duration="136"/>
   </file>
-  <file path="E:\React\blinkist\src\Components\molecules\tabs\index.test.tsx">
-    <testCase name="it should render 2 tabw for 2 length data" duration="270"/>
-    <testCase name="should have green indicator color for currently reading tab by default" duration="81"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Avatar\index.test.tsx">
-    <testCase name="renders  avatar" duration="67"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\molecules\NavIcon\index.test.tsx">
-    <testCase name="render the nav icon as well as label" duration="90"/>
-    <testCase name="Left icon" duration="20"/>
-    <testCase name="Right icon" duration="16"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Typography\index.test.tsx">
-    <testCase name="it renders Text passed from prop" duration="76"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\organisms\Card\index.test.tsx">
-    <testCase name="Book Card component" duration="76"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Blank\index.test.tsx">
-    <testCase name="renders  blank component" duration="48"/>
-  </file>
-  <file path="E:\React\blinkist\src\Components\atoms\Icons\index.test.tsx">
-    <testCase name="should render passed icon" duration="53"/>
+  <file path="E:\React\blinkist\src\Components\molecules\Banner1\index.test.tsx">
+    <testCase name="Banner is Heading" duration="184"/>
   </file>
   <file path="E:\React\blinkist\src\Components\organisms\Footer\index.test.tsx">
-    <testCase name="Footers" duration="96"/>
+    <testCase name="Footer" duration="185"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\ProgressBar\index.test.tsx">
+    <testCase name="should render progressbar" duration="95"/>
+    <testCase name="should render progressbar with value" duration="29"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\pages\MyLibrary\index.test.tsx">
+    <testCase name="Library it renders cicular progress bar if books are not available" duration="240"/>
+    <testCase name="Library should not render cicular progress bar if books are available" duration="172"/>
+    <testCase name="Library should render same no of finished books" duration="417"/>
+    <testCase name="Library should render same no of currently books" duration="144"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\molecules\NavIcon\index.test.tsx">
+    <testCase name="handle hover state" duration="70"/>
+    <testCase name="it render the nav icon as well as label" duration="11"/>
+    <testCase name="Left icon" duration="10"/>
+    <testCase name="Right icon" duration="8"/>
+    <testCase name="teststate" duration="8"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Typography\index.test.tsx">
+    <testCase name="renders Text passed from prop" duration="62"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\molecules\tabs\index.test.tsx">
+    <testCase name="it should render 2 tabw for 2 length data" duration="208"/>
+    <testCase name="this should have green indicator color for currently reading tab by default" duration="64"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\molecules\Logo\index.test.tsx">
+    <testCase name="should render Logo" duration="80"/>
   </file>
   <file path="E:\React\blinkist\src\Components\atoms\Images\index.test.tsx">
-    <testCase name="renders Images" duration="61"/>
+    <testCase name="it renders Images" duration="77"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\Template\Template.test.tsx">
+    <testCase name="Template should render circular bar if data is empty" duration="86"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Avatar\index.test.tsx">
+    <testCase name="renders the avatar" duration="45"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Blank\index.test.tsx">
+    <testCase name="renders the blank component" duration="44"/>
+  </file>
+  <file path="E:\React\blinkist\src\Components\atoms\Icons\index.test.tsx">
+    <testCase name="it should render passed icon" duration="27"/>
   </file>
 </testExecutions>

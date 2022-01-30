@@ -49,7 +49,7 @@ const EntrepreneurComp = ({books, setBooks, data, setData, library, setLibrary, 
     }
 
     const libraryHandler = async (bookId:any, setBookStatus:any) => {
-        try {
+        
             library.currentlyReading.push({
                 "id" : bookId,
                 "progress" : 0
@@ -64,11 +64,7 @@ const EntrepreneurComp = ({books, setBooks, data, setData, library, setLibrary, 
               }
             });
             return await res.json();
-          } catch (err) {
-                setBookStatus(false);
-                setLibrary(library.currentlyReading.filter((currData:any) => currData.id !== bookId));
-                return err;
-          }
+          
     }
     return (
         <Container sx={{marginBottom:'100px'}}>
@@ -78,14 +74,14 @@ const EntrepreneurComp = ({books, setBooks, data, setData, library, setLibrary, 
             <Box>
                 {
                 data.map((curr:any)=>{
-                    return <Box>
+                    return <Box data-testid='container'>
                         <Typography className={classes.heading} sx={{}}>
                             {curr.heading}
                         </Typography>
                         <Box className={classes.main}>
                             {  
                                 !library ?
-                                 <CircularProgress /> :
+                                 <CircularProgress data-testid='circular-progress' /> :
                                     curr.books.map((currData:any) => {
                                         currData = books[currData.id];
                                         const inLibrary = checkInLibrary(currData.id)

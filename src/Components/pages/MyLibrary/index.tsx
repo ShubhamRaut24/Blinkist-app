@@ -8,6 +8,7 @@ import Card from '../../organisms/Card';
 import CircularProgress from '@mui/material/CircularProgress';
 import {Theme} from '../../../Themes/theme';
 import { makeStyles } from '@mui/styles';
+
 const useStyle = makeStyles({
     cards: {
         display: 'flex', 
@@ -38,7 +39,8 @@ const MyLibrary = ({books, setBooks, library, setLibrary}:any) =>{
     const cards = () => {
 
         if(books.length === 0){
-            return  <CircularProgress />
+
+            return  <CircularProgress data-testid='circular-progress'/>
         }
         else {
             if(currState === 'reading'){
@@ -55,9 +57,10 @@ const MyLibrary = ({books, setBooks, library, setLibrary}:any) =>{
                         width= {280}
                         inLibrary= {true}
                         progress= {curr.progress}
+                        data-testid='cards-reading'
                     />
                 })
-            }else{
+            }else if(currState === 'finished'){
                 return data.finishedBook.map((curr:any) => {
                     let currData = books[Number.parseInt(curr.id)];
                     return <Card 
@@ -71,6 +74,7 @@ const MyLibrary = ({books, setBooks, library, setLibrary}:any) =>{
                         width= {280}
                         inLibrary= {true}
                         progress= {100}
+                        data-testid='cards-finished'
                     />
                 });
             }

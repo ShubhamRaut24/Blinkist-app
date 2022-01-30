@@ -72,6 +72,7 @@ const useStyle = makeStyles({
     }
 });
 
+
 const BookInfoComponent = ({library, setLibrary}:any)=>{
     const classes = useStyle();
     const { bookId } = useParams();
@@ -116,8 +117,7 @@ const BookInfoComponent = ({library, setLibrary}:any)=>{
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     const libraryStatusHandler = async (event:any) => {
-       
-        try{
+    
             let index = library.currentlyReading.findIndex((curr:any) => curr.id == bookId);
             let currData = library.currentlyReading[index];
             library.currentlyReading.splice(index, 1);
@@ -132,10 +132,8 @@ const BookInfoComponent = ({library, setLibrary}:any)=>{
             });
             checkInLibrary();
             return await res.json();
-        }catch(err){
-            setLibrary(library);
         }
-    }
+    
     const moreInfo = ()=>{
         if(currState === tabData[0].value){
             return(
@@ -160,7 +158,7 @@ const BookInfoComponent = ({library, setLibrary}:any)=>{
     return(
         !bookData 
                 ?
-        <CircularProgress />
+        <CircularProgress data-testid='circular-progress' />
             :
         <Container>
             <Typography className={classes.topHeading} sx={{display:'flex',jusstifyContent:'start', fontSize:'18px'}}>
@@ -192,7 +190,7 @@ const BookInfoComponent = ({library, setLibrary}:any)=>{
                         <Button children='Read now' size='medium' variant='outlined' color='success' className={classes.statusBox}/>
                         {currentlyReadingStatus 
                             ?
-                            <Button children= 'Finished Reading' size='medium' variant='contained' color='success' onClick={libraryStatusHandler} classesName={classes.status}/>
+                            <Button data-testid='status-handler' children= 'Finished Reading' size='medium' variant='contained' color='success' onClick={libraryStatusHandler} classesName={classes.status}/>
                             :
                             ''
                         }

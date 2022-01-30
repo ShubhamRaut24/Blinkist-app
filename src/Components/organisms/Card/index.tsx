@@ -62,7 +62,7 @@ const CardComponent = ({imgHeight, url, bookName, writerName, timeRead = "0-minu
         setHoverState(!hoverState)
     }
     return(
-        <Paper elevation={1} sx={{
+        <Paper data-testid='card-body' elevation={1} sx={{
                 width: `${width}px`,
                 backgroundColor: `${!inLibrary && hoverState ? theme.palette.primary.light : 'white'}`
             }}
@@ -74,6 +74,7 @@ const CardComponent = ({imgHeight, url, bookName, writerName, timeRead = "0-minu
                     backgroundColor: `${!inLibrary && hoverState ? theme.palette.primary.light : 'white'}`
                 }} 
                 style={styles.content}
+                data-testid='card-box'
             >
                 <Typography variant1="subtitle1" style={styles.bookName} sx={{display:'flex',justifyContent:'start',color:'#03314B'}} >{bookName}</Typography>
                 <Typography variant1="body1"  sx={{display:'flex',justifyContent:'start',color:'#6D787E'}}>{writerName}</Typography>
@@ -94,11 +95,12 @@ const CardComponent = ({imgHeight, url, bookName, writerName, timeRead = "0-minu
             </Box>
             <Box sx={{ position: 'relative'}}>
                 {bookLibraryStatus ? 
-                    <ProgressBar width={100} value={progress} color='primary'/> 
+                    <ProgressBar width={100} value={progress} color='primary' data-testid='progress'/> 
                     :
                     <Box onClick={e => 
                         libraryHandler(cardId, setBookLibraryStatus)
                     } 
+                    data-testid='card-library-handler'
                     sx={{
                         color: `${!hoverState ? '#0365F2' : 'white'}`,
                         backgroundColor: `${hoverState ? '#0365F2' : 'white'}`

@@ -10,7 +10,7 @@ const NavIconComponent = (props: any)=>{
     return(
         <Box data-testid='nav-icon' sx={{display: 'flex', alignItems: 'center', justifyContent: 'left', width: 'auto', margin: '10px 10px 5px 0px'}} >
                 {props.leftIcon ? props.leftIcon : ''}
-                <Typography pl={1} onMouseEnter={hoverStateHandler} onMouseLeave={hoverStateHandler} sx={{color:`${hoverState ?'blue ' : '#6D787E'}`}}>
+                <Typography data-testid='tp' pl={1} onMouseEnter={hoverStateHandler} onMouseLeave={hoverStateHandler} sx={{color:`${hoverState ?'blue ' : '#6D787E'}`}}>
                     {props.label}
                 </Typography>
                 {props.rightIcon ? props.rightIcon : ''}
